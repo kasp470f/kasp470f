@@ -6,4 +6,4 @@ My name is Kasper Wissendorf, currently studying to become a Software Developer 
 </a>
 
 ### Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=8)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=8)](https://github.com/kasp470f)
