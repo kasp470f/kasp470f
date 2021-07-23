@@ -5,7 +5,7 @@ My name is Kasper Wissendorf, currently studying to become a Software Developer 
 
 ### Languages
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=12&bg_color=0000&text_color=0099ff&hide_border=true&title_color=0099ff&hide=TSQL)](https://github.com/kasp470f#WhyDidYouPressThat?)
-
+<a href="https://github.com/kasp470f">
 ![HTML Badge](https://img.shields.io/badge/-HTML-gray?style=flat-square&logo=HTML5)
 ![CSS Badge](https://img.shields.io/badge/-CSS-gray?style=flat-square&logo=css3)
 ![Javascript Badge](https://img.shields.io/badge/-Javascript-gray?style=flat-square&logo=Javascript)
@@ -14,3 +14,4 @@ My name is Kasper Wissendorf, currently studying to become a Software Developer 
 ![Lua Badge](https://img.shields.io/badge/-Lua-gray?style=flat-square&logo=Lua)
 ![C# Badge](https://img.shields.io/badge/-Csharp-gray?style=flat-square&logo=Csharp)
 ![Processing Badge](https://img.shields.io/badge/-Processing-gray?style=flat-square&logo=ProcessingFoundation)
+</a>
