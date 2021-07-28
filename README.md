@@ -16,7 +16,6 @@ My name is Kasper Wissendorf, currently studying to become a Software Developer 
 ![C# Badge](https://img.shields.io/badge/-Csharp-gray?style=flat-square&logo=Csharp)
 ![Processing Badge](https://img.shields.io/badge/-Processing-gray?style=flat-square&logo=ProcessingFoundation)
 ![SQL Badge](https://img.shields.io/badge/-SQL-gray?style=flat-square)
-![C++ Badge](https://img.shields.io/badge/-C++-gray?style=flat-square&logo=c%2B%2B)
 ![MCFunction Badge](https://img.shields.io/badge/-MCFunction-gray?style=flat-square&logo=minecraft&logoColor=white)
   
 </a>
