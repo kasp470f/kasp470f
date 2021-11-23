@@ -17,7 +17,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 ![Processing Badge](https://img.shields.io/badge/-Processing-gray?style=flat-square&logo=ProcessingFoundation)
 ![SQL Badge](https://img.shields.io/badge/-SQL-gray?style=flat-square)
 ![MCFunction Badge](https://img.shields.io/badge/-MCFunction-gray?style=flat-square&logo=minecraft&logoColor=white)
-  
+![Java Badge](https://img.shields.io/badge/-Java-gray?style=flat-square&logo=Java&logoColor=white)
 </a>
 
 <!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=12&bg_color=0000&text_color=0099ff&hide_border=true&title_color=0099ff)](https://github.com/kasp470f#WhyDidYouPressThat?)--!>
