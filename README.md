@@ -3,7 +3,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 [![Linkedin Badge](https://img.shields.io/badge/-Kasper%20Wissendorf-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
 
-### Languages
+### Languages Proficiency
 <a href="https://github.com/kasp470f">
   
 ![HTML Badge](https://img.shields.io/badge/-HTML-gray?style=flat-square&logo=HTML5)
