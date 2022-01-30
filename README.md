@@ -3,21 +3,9 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 [![Linkedin Badge](https://img.shields.io/badge/-Kasper%20Wissendorf-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
 
-### Language Proficiency
-<a href="https://github.com/kasp470f">
-  
-![HTML Badge](https://img.shields.io/badge/-HTML-gray?style=flat-square&logo=HTML5)
-![CSS Badge](https://img.shields.io/badge/-CSS-gray?style=flat-square&logo=css3&logoColor=blue)
-![Javascript Badge](https://img.shields.io/badge/-Javascript-gray?style=flat-square&logo=Javascript)
-![p5.js Badge](https://img.shields.io/badge/-p5.js-gray?style=flat-square&logo=p5.js)
-![NodeJS Badge](https://img.shields.io/badge/-NodeJS-gray?style=flat-square&logo=node.js)
-![Python Badge](https://img.shields.io/badge/-Python-gray?style=flat-square&logo=Python)
-![Lua Badge](https://img.shields.io/badge/-Lua-gray?style=flat-square&logo=Lua)
-![C# Badge](https://img.shields.io/badge/-Csharp-gray?style=flat-square&logo=Csharp)
-![Processing Badge](https://img.shields.io/badge/-Processing-gray?style=flat-square&logo=ProcessingFoundation)
-![SQL Badge](https://img.shields.io/badge/-SQL-gray?style=flat-square)
-![MCFunction Badge](https://img.shields.io/badge/-MCFunction-gray?style=flat-square&logo=minecraft&logoColor=white)
-![Java Badge](https://img.shields.io/badge/-Java-gray?style=flat-square&logo=Java&logoColor=white)
-</a>
+<details>
+  <summary>Language Statistics</summary>
+<img src="https://wakatime.com/share/@26d9b5da-1a46-43a0-b500-8dcba24427ff/2fac237e-fa67-48df-b5d6-d7346f3f6945.svg"/>
+</details>
 
 <!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=12&bg_color=0000&text_color=0099ff&hide_border=true&title_color=0099ff)](https://github.com/kasp470f#WhyDidYouPressThat?)--!>
