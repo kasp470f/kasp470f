@@ -6,7 +6,5 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 <details>
   <summary align="center">Language Statistics</summary>
-<img src="https://wakatime.com/share/@26d9b5da-1a46-43a0-b500-8dcba24427ff/2fac237e-fa67-48df-b5d6-d7346f3f6945.svg"/>
+<a href="https://github.com/kasp470f#WhyDidYouPressThat?"><img src="https://wakatime.com/share/@26d9b5da-1a46-43a0-b500-8dcba24427ff/5974303c-6821-44cb-abc9-b070e75f440b.svg"/></a>
 </details>
-
-<!--[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kasp470f&layout=compact&langs_count=12&bg_color=0000&text_color=0099ff&hide_border=true&title_color=0099ff)](https://github.com/kasp470f#WhyDidYouPressThat?)--!>
