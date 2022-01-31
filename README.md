@@ -6,5 +6,5 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 <details>
   <summary align="center">Language Statistics</summary>
-  <a href="https://github.com/kasp470f#WhyDidYouPressThat?"><img src="https://wakatime.com/share/@26d9b5da-1a46-43a0-b500-8dcba24427ff/5974303c-6821-44cb-abc9-b070e75f440b.svg"</a>
+  <a href="https://github.com/kasp470f#WhyDidYouPressThat?"><img src="https://wakatime.com/share/@26d9b5da-1a46-43a0-b500-8dcba24427ff/c4571e45-843d-4b55-9e45-83b0f4eca7a6.svg"</a>
 </details>
