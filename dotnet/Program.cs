@@ -52,7 +52,7 @@ namespace dotnet
 
             //Setup table
             sb.AppendLine("<table align=\"center\">");
-            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>>\n\t\t<th>Percent</th>\n\t</tr>");
+            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t\t<th>Percent</th>\n\t</tr>");
 
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])

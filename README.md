@@ -9,7 +9,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 <table align="center">
 	<tr>
 		<th>Language</th>
-		<th>Time Spent</th>>
+		<th>Time Spent</th>
 		<th>Percent</th>
 	</tr>
 	<tr>
