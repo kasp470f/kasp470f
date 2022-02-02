@@ -6,16 +6,47 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 <details>
 <summary align="center">Language Statistics</summary>
-| Language | Percent |
-| -------- | ------- |
-| TypeScript | 34.79 |
-| HTML | 23.09 |
-| C# | 16.93 |
-| JavaScript | 11.01 |
-| Lua | 7.17 |
-| CSS | 4.71 |
-| JSON | 1.93 |
-| Text | 0.2 |
-| Perl | 0.17 |
+<table>
+	<tr>
+		<th>Language</th>
+		<th>Percent</th>
+	</tr>
+	<tr>
+		<td>TypeScript</td>
+		<td>34.79%</td>
+	</tr>
+	<tr>
+		<td>HTML</td>
+		<td>23.09%</td>
+	</tr>
+	<tr>
+		<td>C#</td>
+		<td>16.93%</td>
+	</tr>
+	<tr>
+		<td>JavaScript</td>
+		<td>11.01%</td>
+	</tr>
+	<tr>
+		<td>Lua</td>
+		<td>7.17%</td>
+	</tr>
+	<tr>
+		<td>CSS</td>
+		<td>4.71%</td>
+	</tr>
+	<tr>
+		<td>JSON</td>
+		<td>1.93%</td>
+	</tr>
+	<tr>
+		<td>Text</td>
+		<td>0.2%</td>
+	</tr>
+	<tr>
+		<td>Perl</td>
+		<td>0.17%</td>
+	</tr>
+</table>
 </details>
-02/02/2022 11:39:49
+02/02/2022 12:54:33

@@ -39,20 +39,20 @@ namespace dotnet
 
 
             //Setup table
-            sb.AppendLine("| Language | Percent |");
-            sb.AppendLine("| -------- | ------- |");
+            sb.AppendLine("<table>");
+            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Percent</th>\n\t</tr>");
 
             // Get the languages from the data
             foreach (var language in wakatime["data"])
             {
-                sb.AppendLine($"| {language["name"]} | {language["percent"]} |");
+                sb.AppendLine($"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>");
             }
-
+            sb.AppendLine("</table>");
             sb.AppendLine("</details>");
             sb.AppendLine($"{DateTime.Now}");
 
-            // File.WriteAllText("../README.md", sb.ToString());
-            System.Console.WriteLine(sb.ToString());
+            File.WriteAllText("README.md", sb.ToString());
+            // System.Console.WriteLine(sb.ToString());
         }
 
         static HttpClient client = new HttpClient();
