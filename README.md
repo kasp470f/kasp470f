@@ -63,5 +63,5 @@ Below here you will find some of my socials that you can use to get in contact w
 		<td>0.17%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/02/2022 16:38:39</sub></p>
+<p align="center"><sub>Last Updated: 02/02/2022 16:44:06</sub></p>
 </details>
