@@ -2,13 +2,20 @@ name: README Update Schedule Action
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 * * * *'
+    - cron:  '5 * * * *'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-dotnet@v1
-      - name: Running dotnet application
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
       - run: cd dotnet
+      - name: Install dependencies
+        run: dotnet restore
       - run: dotnet run
