@@ -6,6 +6,9 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
     steps:
       - uses: actions/checkout@v2
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
@@ -13,4 +16,6 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - run: cd dotnet
+      - name: Install dependencies
+        run: dotnet restore
       - run: dotnet run
