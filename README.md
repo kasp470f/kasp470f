@@ -48,5 +48,5 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 		<td>0.17%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/02/2022 12:31:58</sub></p>
+<p align="center"><sub>Last Updated: 02/02/2022 12:35:41</sub></p>
 </details>
