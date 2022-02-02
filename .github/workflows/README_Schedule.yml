@@ -21,5 +21,5 @@ jobs:
           git config --global user.email "11627@student.eadania.dk"
 
           git add -A
-          git commit -m "Daily Update to README.md Language Statistics Table" -m "Sent a daily request to the WakaTime JSON API. The README section has now been updated with new data. This action has been triggered by a ${{ github.event	}} event"
+          git commit -m "Daily Update to README.md Language Statistics Table" -m "Sent a daily request to the WakaTime JSON API. The README section has now been updated with new data. This action has been triggered by a ${{ github.event_name }} event"
           git push
