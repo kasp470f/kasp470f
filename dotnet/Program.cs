@@ -11,9 +11,12 @@ namespace dotnet
 {
     class Program
     {
-        private static List<string> readme = File.ReadAllLines("../README.md").ToList();
+        private static List<string> readme;
         static async Task Main(string[] args)
         {
+            // Get README.md file
+            readme = File.ReadAllLines("README.md").ToList();
+
             // Get data from wakatime.com
             JObject wakatime = await GetData();
 
