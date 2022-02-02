@@ -16,3 +16,11 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: dotnet run --project ./dotnet
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "kasp470f"
+          git config --global user.email "11627@student.eadania.dk"
+
+          git add -A
+          git commit -m "Daily Update to README.md"
+          git push
