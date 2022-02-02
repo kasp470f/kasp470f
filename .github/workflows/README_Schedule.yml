@@ -3,6 +3,8 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 5 * * *'
+  push:
+  
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
