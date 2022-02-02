@@ -1,8 +1,5 @@
 name: README Update Schedule Action
-on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '5 * * * *'
+on: push
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
