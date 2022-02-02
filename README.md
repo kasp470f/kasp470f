@@ -1,6 +1,6 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). I will to upload assignments that I have been giving by my teachers, exam projects that can be shared freely, and including some of my own personally created side projects.
+My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). I will upload assignments that I have been giving by my teachers, exam projects that can be shared freely, and including some of my own personally created side projects.
 
 [![Linkedin Badge](https://img.shields.io/badge/-Kasper%20Wissendorf-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
 
