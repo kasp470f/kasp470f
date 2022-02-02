@@ -12,4 +12,7 @@ jobs:
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - run: dotnet run --project ./dotnet
