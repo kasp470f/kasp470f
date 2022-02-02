@@ -22,8 +22,8 @@ namespace dotnet
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
             // Remove all details from the README.md file
-            int details = 6;
-            readme.RemoveRange(details, readme.Count - details);
+            int stats = readme.IndexOf("<!-- Stats -->")+1;
+            readme.RemoveRange(stats, readme.Count - stats);
 
 
             BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string buildString);

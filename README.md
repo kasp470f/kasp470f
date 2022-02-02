@@ -1,10 +1,12 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). I will upload assignments that I have been given by my teachers, exam projects that can be shared freely, and some of my own personally created side projects.
+My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). I like coding in my spare time and enjoy learning new Coding Languages. On this here profile, I will also try to upload some projects that I make, that I find interesting. I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
+Below here you will find some of my socials that you can use to get in contact with me!
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
 [![StackOverflow Badge](https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=flat-square&logo=Stack-Overflow&logoColor=white)](https://stackoverflow.com/users/18100435/kasper-wissendorf)
 
+<!-- Stats -->
 <details>
 <summary align="center">Language Statistics</summary>
 <table align="center">
@@ -59,5 +61,5 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 		<td>0.17%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/02/2022 12:50:43</sub></p>
+<p align="center"><sub>Last Updated: 02/02/2022 15:08:56</sub></p>
 </details>
