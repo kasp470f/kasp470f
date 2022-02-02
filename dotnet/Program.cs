@@ -48,7 +48,8 @@ namespace dotnet
             sb.AppendLine("</details>");
             sb.AppendLine($"{DateTime.Now}");
 
-            File.WriteAllText("../README.md", sb.ToString());
+            // File.WriteAllText("../README.md", sb.ToString());
+            System.Console.WriteLine(sb.ToString());
         }
 
         static HttpClient client = new HttpClient();
