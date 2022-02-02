@@ -18,11 +18,24 @@ namespace dotnet
             readme = File.ReadAllLines("README.md").ToList();
 
             // Get data from wakatime.com
-            JObject wakatime = await GetData();
+            JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
+            JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
             // Remove all details from the README.md file
             int details = 6;
             readme.RemoveRange(details, readme.Count - details);
+
+
+            BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string buildString);
+
+            File.WriteAllText("README.md", buildString);
+            // System.Console.WriteLine(buildString);
+        }
+
+        private static void BuildLanguageStatistics(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
+        {
+            // Get total time in seconds from WakaTime
+            double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
 
 
             StringBuilder sb = new StringBuilder();
@@ -37,28 +50,31 @@ namespace dotnet
             sb.AppendLine("<details>");
             sb.AppendLine("<summary align=\"center\">Language Statistics</summary>");
 
-
             //Setup table
             sb.AppendLine("<table align=\"center\">");
-            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Percent</th>\n\t</tr>");
+            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>>\n\t\t<th>Percent</th>\n\t</tr>");
 
             // Get the languages from the data
-            foreach (var language in wakatime["data"])
+            foreach (var language in wakatimeLanguages["data"])
             {
-                sb.AppendLine($"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>");
+                double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
+                TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
+                sb.AppendLine($"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>");
             }
+
+            // Close table
             sb.AppendLine("</table>");
             sb.AppendLine($"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>");
             sb.AppendLine("</details>");
 
-            File.WriteAllText("README.md", sb.ToString());
-            // System.Console.WriteLine(sb.ToString());
+            // Output the string
+            buildString = sb.ToString();
         }
 
         static HttpClient client = new HttpClient();
-        private static async Task<JObject> GetData()
+        private static async Task<JObject> GetData(string URL)
         {
-            string APIRequest = $"https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json";
+            string APIRequest = $"{URL}";
             string text = null;
             HttpResponseMessage response = await client.GetAsync(APIRequest);
             if (response.IsSuccessStatusCode)
