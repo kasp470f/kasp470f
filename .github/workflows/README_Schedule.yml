@@ -11,11 +11,11 @@ jobs:
         dotnet-version: ['3.0', '3.1.x', '5.0.x' ]
     steps:
       - uses: actions/checkout@v2
+      - run: cd dotnet
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-      - run: cd dotnet
       - name: Install dependencies
         run: dotnet restore
       - run: dotnet run
