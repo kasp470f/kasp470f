@@ -1,6 +1,8 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). I like coding in my spare time and enjoy learning new Coding Languages. On this here profile, I will also try to upload some projects that I make, that I find interesting. I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
+My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). <br>
+I like coding in my spare time and enjoy learning new `Coding Languages`. I will also try to upload some projects that I make, that I find interesting. I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
+
 Below here you will find some of my socials that you can use to get in contact with me!
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
