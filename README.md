@@ -6,7 +6,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 
 <details>
 <summary align="center">Language Statistics</summary>
-<table>
+<table align="center">
 	<tr>
 		<th>Language</th>
 		<th>Percent</th>
@@ -48,5 +48,5 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 		<td>0.17%</td>
 	</tr>
 </table>
+<p align="center"><sub>Last Updated: 02/02/2022 12:58:45</sub></p>
 </details>
-02/02/2022 12:54:33
