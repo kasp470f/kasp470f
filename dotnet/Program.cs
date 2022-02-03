@@ -15,15 +15,11 @@ namespace dotnet
         static async Task Main(string[] args)
         {
             // Get README.md file
-            readme = File.ReadAllLines("README.md").ToList();
+            readme = File.ReadAllLines("markdown_components/description.md").ToList();
 
             // Get data from wakatime.com
             JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
-
-            // Remove all details from the README.md file
-            int stats = readme.IndexOf("<!-- Stats -->")+1;
-            readme.RemoveRange(stats, readme.Count - stats);
 
             // Build the new data in a markdown structure
             BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string buildString);
