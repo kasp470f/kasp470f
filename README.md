@@ -10,7 +10,7 @@ Below here you will find some of my socials that you can use to get in contact w
 
 <!-- Stats -->
 <details>
-<summary align="center">Language Statistics</summary>
+<summary align="center">Language Statistics</summary><br>
 <table align="center">
 	<tr>
 		<th>Language</th>
@@ -83,6 +83,6 @@ Below here you will find some of my socials that you can use to get in contact w
 		<td>0.08%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/03/2022 08:58:22</sub></p>
+<p align="center"><sub>Last Updated: 02/03/2022 09:07:40</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
