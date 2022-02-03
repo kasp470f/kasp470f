@@ -21,22 +21,21 @@ namespace dotnet
             JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
-            // Remove all details from the README.md file
-            int stats = readme.IndexOf("<!-- Stats -->")+1;
-            readme.RemoveRange(stats, readme.Count - stats);
-
-
+            // Build the new data in a markdown structure
             BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string buildString);
 
+            // Add the new statistics to the README.md file
             File.WriteAllText("README.md", buildString);
-            // System.Console.WriteLine(buildString);
         }
 
         private static void BuildLanguageStatistics(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
         {
+            // Remove all details from the README.md file
+            int stats = readme.IndexOf("<!-- Stats Start -->") + 1;
+            readme.RemoveRange(stats, readme.Count - stats);
+
             // Get total time in seconds from WakaTime
             double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
-
 
             StringBuilder sb = new StringBuilder();
 
@@ -48,7 +47,7 @@ namespace dotnet
 
             // Add the details
             sb.AppendLine("<details>");
-            sb.AppendLine("<summary align=\"center\">Language Statistics</summary><br>");
+            sb.AppendLine("<summary align=\"center\">Language Statistics</summary>\n<br>");
 
             //Setup table
             sb.AppendLine("<table align=\"center\">");
