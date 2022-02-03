@@ -48,7 +48,7 @@ namespace dotnet
 
             // Add the details
             sb.AppendLine("<details>");
-            sb.AppendLine("<summary align=\"center\">Language Statistics</summary>");
+            sb.AppendLine("<summary align=\"center\">Language Statistics</summary><br>");
 
             //Setup table
             sb.AppendLine("<table align=\"center\">");
