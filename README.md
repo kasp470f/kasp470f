@@ -10,7 +10,8 @@ Below here you will find some of my *socials* that you can use to get in contact
 
 <!-- Stats -->
 <details>
-<summary align="center">Language Statistics</summary><br>
+<summary align="center">Language Statistics</summary>
+<br>
 <table align="center">
 	<tr>
 		<th>Language</th>
@@ -83,6 +84,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>0.08%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/03/2022 09:20:36</sub></p>
+<p align="center"><sub>Last Updated: 03/02/2022 13:09:15</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
