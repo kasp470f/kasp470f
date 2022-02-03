@@ -11,37 +11,29 @@ namespace dotnet
 {
     class Program
     {
-        private static List<string> readme;
         static async Task Main(string[] args)
         {
             // Get README.md file
-            readme = File.ReadAllLines("markdown_components/description.md").ToList();
+            string readme = File.ReadAllText("markdown_components/description.md");
 
             // Get data from wakatime.com
             JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
             // Build the new data in a markdown structure
-            BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string buildString);
+            BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
-            File.WriteAllText("README.md", buildString);
+            File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
         private static void BuildLanguageStatistics(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
         {
-
             // Get total time in seconds from WakaTime
             double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
 
             // Instantiate the string builder
             StringBuilder sb = new StringBuilder();
-
-            // Add existing readme to StringBuilder
-            foreach (var line in readme)
-            {
-                sb.AppendLine(line);
-            }
 
             // Add the details
             sb.AppendLine("<details>");
