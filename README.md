@@ -1,16 +1,6 @@
-## <p align="center">Hello there 🕹️</p>
-
-My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). <br>
-I like coding in my spare time and enjoy learning new `Coding Languages`. I will also try to upload some projects that I make, that I find interesting. I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
-
-Below here you will find some of my *socials* that you can use to get in contact with me!
-
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
-[![StackOverflow Badge](https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=flat-square&logo=Stack-Overflow&logoColor=white)](https://stackoverflow.com/users/18100435/kasper-wissendorf)
-
-<!-- Stats -->
 <details>
-<summary align="center">Language Statistics</summary><br>
+<summary align="center">Language Statistics</summary>
+<br>
 <table align="center">
 	<tr>
 		<th>Language</th>
@@ -83,6 +73,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>0.08%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/03/2022 09:20:36</sub></p>
+<p align="center"><sub>Last Updated: 02/03/2022 12:04:10</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
