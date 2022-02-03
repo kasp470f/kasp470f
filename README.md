@@ -73,6 +73,6 @@
 		<td>0.08%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 03/02/2022 13:09:15</sub></p>
+<p align="center"><sub>Last Updated: 02/03/2022 12:11:04</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
