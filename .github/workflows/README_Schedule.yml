@@ -6,7 +6,7 @@ on:
   push:
   
 jobs:
-  Explore-GitHub-Actions:
+  Updating_README:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
