@@ -24,3 +24,21 @@ jobs:
           git add -A
           git commit -m "Daily Update to the README Components" -m "Sent a daily request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
           git push
+  Combine_Components:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: '5.0.x'
+      - name: Run .NET Project
+        run: dotnet run --project ./dotnet -- Components
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "kasp470f"
+          git config --global user.email "11627@student.eadania.dk"
+
+          git add -A
+          git commit -m "Daily Update to the README" -m "Combined the markdown components. This action has been triggered by a ${{ github.event_name }} event"
+          git push
