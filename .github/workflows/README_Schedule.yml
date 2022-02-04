@@ -6,7 +6,7 @@ on:
   push:
   
 jobs:
-  Updating_README:
+  Update_README_Components:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,12 +15,12 @@ jobs:
         with:
           dotnet-version: '5.0.x'
       - name: Run .NET Project
-        run: dotnet run --project ./dotnet
+        run: dotnet run --project ./dotnet -- Statistics
       - name: Commit and push changes
         run: |
           git config --global user.name "kasp470f"
           git config --global user.email "11627@student.eadania.dk"
 
           git add -A
-          git commit -m "Daily Update to README.md Language Statistics Table" -m "Sent a daily request to the WakaTime JSON API. The README section has now been updated with new data. This action has been triggered by a ${{ github.event_name }} event"
+          git commit -m "Daily Update to the README Components" -m "Sent a daily request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
           git push
