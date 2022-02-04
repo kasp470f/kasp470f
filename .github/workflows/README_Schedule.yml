@@ -40,6 +40,7 @@ jobs:
           git config --global user.name "kasp470f"
           git config --global user.email "11627@student.eadania.dk"
 
+          git pull
           git add -A
           git commit -m "Daily Update to the README" -m "Combined the markdown components. This action has been triggered by a ${{ github.event_name }} event"
           git push
