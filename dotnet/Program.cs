@@ -13,31 +13,9 @@ namespace dotnet
     {
         static async Task Main(string[] args)
         {
-            // Statistics
-            if (args[0] == "Statistics")
-            {
-                await Statistics();
-            }
-            // Combine components
-            else if(args[0] == "Components")
-            {
-                CombineMarkdown();
-            }
-        }
-
-        private static void CombineMarkdown()
-        {
             // Get README.md file
-            string description = File.ReadAllText("markdown_components/description.md");
-            string statistics = File.ReadAllText("markdown_components/statistics.md");
+            string readme = File.ReadAllText("markdown_components/description.md");
 
-            // Combine components
-            File.WriteAllText("README.md", description + statistics);
-        }
-
-
-        private static async Task Statistics()
-        {
             // Get data from wakatime.com
             JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
@@ -45,8 +23,8 @@ namespace dotnet
             // Build the new data in a markdown structure
             BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
-            // Add the new statistics to the statistics.md file
-            File.WriteAllText("markdown_components/statistics.md", statisticBuildString);
+            // Add the new statistics to the README.md file
+            File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
         private static void BuildLanguageStatistics(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
@@ -64,7 +42,7 @@ namespace dotnet
             //Setup table
             sb.AppendLine("<table align=\"center\">");
             sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t\t<th>Percent</th>\n\t</tr>");
-
+            
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
             {
