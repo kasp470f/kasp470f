@@ -1,7 +1,7 @@
 ## <p align="center">Hello there 🕹️</p>
 
 My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). <br>
-I enjoy coding in my spare time and enjoy learning new `Coding Languages`. On this GitHub Profile, I will upload some projects that I make, that I find interesting and I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
+I enjoy coding in my spare time and I find learning new `Coding Languages` exciting. On this GitHub Profile, I will upload some projects that I make, that I find interesting and I will also upload assignments that I have been given by my teachers, exam projects that can be shared freely. 
 
 Below here you will find some of my *socials* that you can use to get in contact with me!
 
