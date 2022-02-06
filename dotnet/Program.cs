@@ -21,41 +21,41 @@ namespace dotnet
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
             // Build the new data in a markdown structure
-            BuildLanguageStatistics(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
+            BuildLanguageStatisticsTable(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
             File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
-        private static void BuildLanguageStatistics(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
+        private static void BuildLanguageStatisticsTable(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
         {
             // Get total time in seconds from WakaTime
             double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
 
             // Instantiate the string builder
-            StringBuilder sb = new StringBuilder();
+            string sb = string.Empty;
 
             // Add the details
-            sb.AppendLine("<details>");
-            sb.AppendLine("<summary align=\"center\"><strong>Language Statistics</strong></summary>\n<br>");
+            sb += "<details>" + "\n";
+            sb += "<summary align=\"center\"><strong>Language Statistics</strong></summary>\n<br>" + "\n";
 
             //Setup table
-            sb.AppendLine("<table align=\"center\">");
-            sb.AppendLine("\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t\t<th>Percent</th>\n\t</tr>");
+            sb += "<table align=\"center\">" + "\n";
+            sb += "\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t\t<th>Percent</th>\n\t</tr>" + "\n";
             
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
             {
                 double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
                 TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                sb.AppendLine($"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>");
+                sb += $"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>" + "\n";
             }
 
             // Close table
-            sb.AppendLine("</table>");
-            sb.AppendLine($"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>");
-            sb.AppendLine($"<p align=\"center\"><sub>Data first recorded on 31th. January of 2022</sub></p>");
-            sb.AppendLine("</details>");
+            sb += "</table>" + "\n";
+            sb += $"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>" + "\n";
+            sb += $"<p align=\"center\"><sub>Data first recorded on 31th. January of 2022</sub></p>" + "\n";
+            sb += ("</details>");
 
             // Output the string
             buildString = sb.ToString();
