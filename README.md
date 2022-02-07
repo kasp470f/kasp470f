@@ -84,6 +84,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>0.05%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/06/2022 15:44:24</sub></p>
+<p align="center"><sub>Last Updated: 02/07/2022 12:26:31</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
