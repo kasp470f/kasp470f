@@ -22,69 +22,69 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<th>Percent</th>
 	</tr>
 	<tr>
-		<td>C#</td>
-		<td>05h 14m</td>
-		<td>32.97%</td>
+		<td>JavaScript</td>
+		<td>06h 43m</td>
+		<td>36.44%</td>
 	</tr>
 	<tr>
-		<td>JavaScript</td>
-		<td>04h 27m</td>
-		<td>28.09%</td>
+		<td>C#</td>
+		<td>05h 15m</td>
+		<td>28.45%</td>
 	</tr>
 	<tr>
 		<td>HTML</td>
-		<td>02h 13m</td>
-		<td>13.96%</td>
+		<td>02h 28m</td>
+		<td>13.38%</td>
 	</tr>
 	<tr>
 		<td>Markdown</td>
 		<td>01h 23m</td>
-		<td>8.76%</td>
+		<td>7.57%</td>
 	</tr>
 	<tr>
 		<td>TypeScript</td>
 		<td>00h 59m</td>
-		<td>6.24%</td>
+		<td>5.38%</td>
 	</tr>
 	<tr>
 		<td>JSON</td>
 		<td>00h 35m</td>
-		<td>3.74%</td>
+		<td>3.23%</td>
 	</tr>
 	<tr>
 		<td>CSS</td>
-		<td>00h 14m</td>
-		<td>1.52%</td>
+		<td>00h 16m</td>
+		<td>1.47%</td>
 	</tr>
 	<tr>
 		<td>Other</td>
 		<td>00h 13m</td>
-		<td>1.37%</td>
+		<td>1.19%</td>
 	</tr>
 	<tr>
 		<td>Lua</td>
 		<td>00h 12m</td>
-		<td>1.29%</td>
+		<td>1.11%</td>
 	</tr>
 	<tr>
 		<td>XAML</td>
 		<td>00h 07m</td>
-		<td>0.8%</td>
+		<td>0.69%</td>
 	</tr>
 	<tr>
 		<td>Git Config</td>
 		<td>00h 06m</td>
-		<td>0.64%</td>
+		<td>0.56%</td>
 	</tr>
 	<tr>
 		<td>YAML</td>
 		<td>00h 04m</td>
-		<td>0.44%</td>
+		<td>0.38%</td>
 	</tr>
 	<tr>
 		<td>Text</td>
 		<td>00h 01m</td>
-		<td>0.15%</td>
+		<td>0.14%</td>
 	</tr>
 	<tr>
 		<td>Perl</td>
@@ -92,6 +92,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>0.03%</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/12/2022 12:24:47</sub></p>
+<p align="center"><sub>Last Updated: 02/13/2022 12:24:38</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
