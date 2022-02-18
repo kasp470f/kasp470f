@@ -23,7 +23,7 @@ Below here you will find some of my *socials* that you can use to get in contact
 	</tr>
 	<tr>
 		<td>JavaScript</td>
-		<td>07h 13m</td>
+		<td>11h 33m</td>
 	</tr>
 	<tr>
 		<td>C#</td>
@@ -35,7 +35,11 @@ Below here you will find some of my *socials* that you can use to get in contact
 	</tr>
 	<tr>
 		<td>Markdown</td>
-		<td>01h 23m</td>
+		<td>01h 24m</td>
+	</tr>
+	<tr>
+		<td>CSS</td>
+		<td>01h 05m</td>
 	</tr>
 	<tr>
 		<td>TypeScript</td>
@@ -47,11 +51,11 @@ Below here you will find some of my *socials* that you can use to get in contact
 	</tr>
 	<tr>
 		<td>JSON</td>
-		<td>00h 38m</td>
+		<td>00h 41m</td>
 	</tr>
 	<tr>
-		<td>CSS</td>
-		<td>00h 19m</td>
+		<td>Other</td>
+		<td>00h 14m</td>
 	</tr>
 	<tr>
 		<td>XAML</td>
@@ -74,6 +78,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>00h 00m</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 18/02/2022 20:12:19</sub></p>
+<p align="center"><sub>Last Updated: 02/18/2022 19:14:05</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
