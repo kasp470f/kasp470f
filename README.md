@@ -19,7 +19,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 	<tr>
 		<th>Language</th>
 		<th>Time Spent</th>
-		<th>Percent</th>
 	</tr>
 	<tr>
 		<td>JavaScript</td>
