@@ -19,6 +19,7 @@ Below here you will find some of my *socials* that you can use to get in contact
 	<tr>
 		<th>Language</th>
 		<th>Time Spent</th>
+		<th>Percent</th>
 	</tr>
 	<tr>
 		<td>JavaScript</td>
@@ -77,6 +78,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>00h 00m</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/18/2022 19:14:05</sub></p>
+<p align="center"><sub>Last Updated: 02/18/2022 19:15:12</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
