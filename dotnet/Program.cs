@@ -41,7 +41,7 @@ namespace dotnet
 
             //Setup table
             sb += "<table align=\"center\">" + "\n";
-            sb += "\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t\t<th>Percent</th>\n\t</tr>" + "\n";
+            sb += "\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t</tr>" + "\n";
             
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
