@@ -48,7 +48,7 @@ namespace dotnet
             {
                 double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
                 TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                sb += $"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t\t<td>{language["percent"]}%</td>\n\t</tr>" + "\n";
+                sb += $"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t</tr>" + "\n";
             }
 
             // Close table
