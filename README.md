@@ -77,6 +77,6 @@ Below here you will find some of my *socials* that you can use to get in contact
 		<td>00h 00m</td>
 	</tr>
 </table>
-<p align="center"><sub>Last Updated: 02/19/2022 12:25:42</sub></p>
+<p align="center"><sub>Last Updated: 02/20/2022 12:25:45</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </details>
