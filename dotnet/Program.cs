@@ -21,7 +21,8 @@ namespace dotnet
             JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
             // Build the new data in a markdown structure
-            BuildLanguageStatisticsTable(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
+            // BuildLanguageStatisticsTable(wakatimeLanguages, wakatimeTime, out string statisticBuildString);'
+            BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
             File.WriteAllText("README.md", readme + statisticBuildString);
@@ -58,6 +59,39 @@ namespace dotnet
             sb += ("</details>");
 
             // Output the string
+            buildString = sb.ToString();
+        }
+
+        private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
+        {
+            // Get total time in seconds from WakaTime
+            double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
+
+            // Instantiate the string builder
+            string sb = string.Empty;
+
+            // Add center div
+            sb += "<div align=\"center\">" + "\n";
+
+            // Add code block
+            sb += "<pre>" + "\n";
+            
+            // Get the languages from the data
+            foreach (var language in wakatimeLanguages["data"])
+            {
+                double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
+                TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
+                sb += $"{language["name"].ToString().PadRight(20)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
+            }
+            
+            // Get time
+            sb += $"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>" + "\n";
+            sb += $"<p align=\"center\"><sub>Data first recorded on 31th. January of 2022</sub></p>" + "\n";
+
+            // Close code block and center div
+            sb += "</pre>" + "\n";
+            sb += "</div>";
+
             buildString = sb.ToString();
         }
 

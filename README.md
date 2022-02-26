@@ -12,71 +12,23 @@ Below here you will find some of my *socials* that you can use to get in contact
 </div>
 
 <br>
-<details>
-<summary align="center"><strong>Language Statistics</strong></summary>
-<br>
-<table align="center">
-	<tr>
-		<th>Language</th>
-		<th>Time Spent</th>
-	</tr>
-	<tr>
-		<td>JavaScript</td>
-		<td>16h 56m</td>
-	</tr>
-	<tr>
-		<td>C#</td>
-		<td>05h 20m</td>
-	</tr>
-	<tr>
-		<td>HTML</td>
-		<td>02h 29m</td>
-	</tr>
-	<tr>
-		<td>CSS</td>
-		<td>02h 20m</td>
-	</tr>
-	<tr>
-		<td>Markdown</td>
-		<td>01h 29m</td>
-	</tr>
-	<tr>
-		<td>TypeScript</td>
-		<td>00h 59m</td>
-	</tr>
-	<tr>
-		<td>Lua</td>
-		<td>00h 47m</td>
-	</tr>
-	<tr>
-		<td>JSON</td>
-		<td>00h 41m</td>
-	</tr>
-	<tr>
-		<td>Other</td>
-		<td>00h 14m</td>
-	</tr>
-	<tr>
-		<td>XAML</td>
-		<td>00h 07m</td>
-	</tr>
-	<tr>
-		<td>Git Config</td>
-		<td>00h 06m</td>
-	</tr>
-	<tr>
-		<td>YAML</td>
-		<td>00h 04m</td>
-	</tr>
-	<tr>
-		<td>Text</td>
-		<td>00h 01m</td>
-	</tr>
-	<tr>
-		<td>Perl</td>
-		<td>00h 00m</td>
-	</tr>
-</table>
-<p align="center"><sub>Last Updated: 02/26/2022 12:26:04</sub></p>
+<div align="center">
+<pre>
+JavaScript          | 20 hours 28 minutes
+C#                  | 05 hours 27 minutes
+CSS                 | 03 hours 07 minutes
+HTML                | 02 hours 29 minutes
+Markdown            | 01 hours 29 minutes
+TypeScript          | 01 hours 00 minutes
+Lua                 | 00 hours 47 minutes
+JSON                | 00 hours 41 minutes
+Other               | 00 hours 15 minutes
+XAML                | 00 hours 07 minutes
+Git Config          | 00 hours 06 minutes
+YAML                | 00 hours 04 minutes
+Text                | 00 hours 01 minutes
+Perl                | 00 hours 00 minutes
+<p align="center"><sub>Last Updated: 27/02/2022 00:39:20</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
-</details>
+</pre>
+</div>
