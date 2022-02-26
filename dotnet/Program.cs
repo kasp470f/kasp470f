@@ -70,6 +70,10 @@ namespace dotnet
             // Instantiate the string builder
             string sb = string.Empty;
 
+            // Add the details
+            sb += "<details>" + "\n";
+            sb += "<summary align=\"center\"><strong>Language Statistics</strong></summary>\n<br>" + "\n";
+
             // Add center div
             sb += "<div align=\"center\">" + "\n";
 
@@ -90,7 +94,8 @@ namespace dotnet
 
             // Close code block and center div
             sb += "</pre>" + "\n";
-            sb += "</div>";
+            sb += "</div>" + "\n";
+            sb += "</details>";
 
             buildString = sb.ToString();
         }
