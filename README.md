@@ -28,7 +28,7 @@ Git Config          | 00 hours 06 minutes
 YAML                | 00 hours 04 minutes
 Text                | 00 hours 01 minutes
 Perl                | 00 hours 00 minutes
-<p align="center"><sub>Last Updated: 27/02/2022 00:39:20</sub></p>
+<p align="center"><sub>Last Updated: 02/26/2022 23:40:31</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </pre>
 </div>
