@@ -89,8 +89,8 @@ namespace dotnet
             }
             
             // Get time
-            sb += $"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>" + "\n";
-            sb += $"<p align=\"center\"><sub>Data first recorded on 31th. January of 2022</sub></p>" + "\n";
+            sb += $"<sub>Last Updated: {DateTime.Now}</sub>" + "\n";
+            sb += $"<sub>Data first recorded on 31th. January of 2022</sub>" + "\n";
 
             // Close code block and center div
             sb += "</pre>" + "\n";
