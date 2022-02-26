@@ -12,6 +12,9 @@ Below here you will find some of my *socials* that you can use to get in contact
 </div>
 
 <br>
+<details>
+<summary align="center"><strong>Language Statistics</strong></summary>
+<br>
 <div align="center">
 <pre>
 JavaScript          | 20 hours 28 minutes
@@ -28,7 +31,8 @@ Git Config          | 00 hours 06 minutes
 YAML                | 00 hours 04 minutes
 Text                | 00 hours 01 minutes
 Perl                | 00 hours 00 minutes
-<p align="center"><sub>Last Updated: 02/26/2022 23:40:31</sub></p>
+<p align="center"><sub>Last Updated: 02/26/2022 23:43:03</sub></p>
 <p align="center"><sub>Data first recorded on 31th. January of 2022</sub></p>
 </pre>
 </div>
+</details>
