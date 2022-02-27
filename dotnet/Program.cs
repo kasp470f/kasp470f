@@ -72,7 +72,7 @@ namespace dotnet
 
             // Add the details
             sb += "<details>" + "\n";
-            sb += "<summary align=\"center\"><strong>Language Statistics</strong></summary>\n<br>" + "\n";
+            sb += "<summary align=\"center\"><strong>Programming Language Statistics</strong></summary>\n<br>" + "\n";
 
             // Add center div
             sb += "<div align=\"center\">" + "\n";
