@@ -85,7 +85,7 @@ namespace dotnet
             {
                 double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
                 TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                sb += $"{language["name"].ToString().PadRight(20)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
+                sb += $"{language["name"].ToString().PadRight(15)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
             }
             
             // Get time
