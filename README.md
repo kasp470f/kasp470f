@@ -13,7 +13,7 @@ Below here you will find some of my *socials* that you can use to get in contact
 
 <br>
 <details>
-<summary align="center"><strong>Language Statistics</strong></summary>
+<summary align="center"><strong>Programming Language Statistics</strong></summary>
 <br>
 <div align="center">
 <pre>
@@ -31,7 +31,7 @@ Git Config     | 00 hours 06 minutes
 YAML           | 00 hours 04 minutes
 Text           | 00 hours 01 minutes
 Perl           | 00 hours 00 minutes
-<sub>Last Updated: 02/27/2022 16:02:11</sub>
+<sub>Last Updated: 02/27/2022 16:05:11</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
