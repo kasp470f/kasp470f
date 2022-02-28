@@ -43,7 +43,7 @@ namespace dotnet
             //Setup table
             sb += "<table align=\"center\">" + "\n";
             sb += "\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t</tr>" + "\n";
-            
+
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
             {
@@ -79,15 +79,18 @@ namespace dotnet
 
             // Add code block
             sb += "<pre>" + "\n";
-            
+
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
             {
-                double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
-                TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                sb += $"{language["name"].ToString().PadRight(15)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
+                if(NotInclude(language["name"].ToString()))
+                {
+                    double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
+                    TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
+                    sb += $"{language["name"].ToString().PadRight(15)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
+                }
             }
-            
+
             // Get time
             sb += $"<sub>Last Updated: {DateTime.Now}</sub>" + "\n";
             sb += $"<sub>Data first recorded on 31th. January of 2022</sub>" + "\n";
@@ -111,6 +114,12 @@ namespace dotnet
                 text = await response.Content.ReadAsStringAsync();
             }
             return JObject.Parse(text);
+        }
+
+        private static bool NotInclude(string name)
+        {
+            List<string> exclude = new List<string> {"JSON","Other","XAML","Git Config","YAML","Text","Perl" };
+            return !exclude.Contains(name);
         }
     }
 }
