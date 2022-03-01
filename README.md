@@ -18,13 +18,14 @@ Below here you will find some of my *socials* that you can use to get in contact
 <div align="center">
 <pre>
 JavaScript     | 20 hours 28 minutes
-C#             | 05 hours 43 minutes
+C#             | 05 hours 48 minutes
 CSS            | 03 hours 07 minutes
 HTML           | 02 hours 29 minutes
-Markdown       | 01 hours 41 minutes
+Markdown       | 01 hours 46 minutes
+C++            | 01 hours 22 minutes
 TypeScript     | 00 hours 59 minutes
-Lua            | 00 hours 47 minutes
-<sub>Last Updated: 03/01/2022 12:29:05</sub>
+Lua            | 00 hours 48 minutes
+<sub>Last Updated: 03/01/2022 13:06:29</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
