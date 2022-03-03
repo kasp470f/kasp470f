@@ -25,7 +25,7 @@ Markdown       | 01 hours 46 minutes
 C++            | 01 hours 22 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 48 minutes
-<sub>Last Updated: 03/02/2022 12:28:55</sub>
+<sub>Last Updated: 03/03/2022 12:29:15</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
