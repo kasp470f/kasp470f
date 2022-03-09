@@ -25,7 +25,7 @@ HTML           | 02 hours 29 minutes
 Markdown       | 01 hours 46 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 48 minutes
-<sub>Last Updated: 03/08/2022 12:29:23</sub>
+<sub>Last Updated: 03/09/2022 12:28:56</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
