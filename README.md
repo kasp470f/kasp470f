@@ -17,17 +17,17 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-JavaScript     | 20 hours 22 minutes
-C++            | 18 hours 41 minutes
-C#             | 05 hours 58 minutes
-CSS            | 03 hours 06 minutes
-HTML           | 02 hours 28 minutes
-Markdown       | 01 hours 45 minutes
-TypeScript     | 00 hours 59 minutes
-Lua            | 00 hours 47 minutes
+JavaScript     | 21 hours 47 minutes
+C++            | 19 hours 59 minutes
+C#             | 06 hours 23 minutes
+CSS            | 03 hours 19 minutes
+HTML           | 02 hours 38 minutes
+Markdown       | 01 hours 52 minutes
+TypeScript     | 01 hours 03 minutes
+Lua            | 00 hours 51 minutes
 C              | 00 hours 02 minutes
 XML            | 00 hours 02 minutes
-<sub>Last Updated: 03/16/2022 01:01:40</sub>
+<sub>Last Updated: 03/18/2022 01:13:16</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
