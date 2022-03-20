@@ -38,7 +38,7 @@ namespace dotnet
 
             // Add the details
             sb += "<details>" + "\n";
-            sb += "<summary align=\"center\"><strong>Language Statistics</strong></summary>\n<br>" + "\n";
+            sb += "<summary align=\"center\"><strong>Language Statistics📈</strong></summary>\n<br>" + "\n";
 
             //Setup table
             sb += "<table align=\"center\">" + "\n";
