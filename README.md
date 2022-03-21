@@ -29,7 +29,7 @@ Lua            | 00 hours 47 minutes
 XML            | 00 hours 02 minutes
 C              | 00 hours 02 minutes
 Objective-C    | 00 hours 02 minutes
-<sub>Last Updated: 03/20/2022 16:19:25</sub>
+<sub>Last Updated: 03/21/2022 01:01:34</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
