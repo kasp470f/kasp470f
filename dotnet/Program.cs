@@ -118,7 +118,7 @@ namespace dotnet
 
         private static bool NotInclude(string name)
         {
-            List<string> exclude = new List<string> {"JSON","Other","XAML","Git Config","YAML","Text","Perl" };
+            List<string> exclude = new List<string> {"JSON","Other","XAML","Git Config","YAML","Text","Perl","XML","Objective-C","C" };
             return !exclude.Contains(name);
         }
     }
