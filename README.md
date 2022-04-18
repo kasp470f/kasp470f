@@ -29,7 +29,8 @@ Lua            | 00 hours 47 minutes
 XML            | 00 hours 02 minutes
 C              | 00 hours 02 minutes
 Objective-C    | 00 hours 02 minutes
-<sub>Last Updated: 04/17/2022 15:04:03</sub>
+Python         | 00 hours 01 minutes
+<sub>Last Updated: 04/18/2022 02:00:46</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
