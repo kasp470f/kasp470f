@@ -4,7 +4,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
 On this GitHub Profile, I will upload some **projects🚧** that I personally create. I will also upload **assignments📝** that I have been given by my teachers and **exam projects🎓** that can be shared freely. 
 
-Below here you will find some of my *socials* that you can use to get in contact with me!
+Below here you will find some of my *socials* that you can use to get in contact with me! 
 
 <div align="center">
   
