@@ -4,7 +4,7 @@ My name is **Kasper Wissendorf**, currently studying to become a **Software Deve
 I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
 On this GitHub Profile, I will upload some **projects🚧** that I personally create. I will also upload **assignments📝** that I have been given by my teachers and **exam projects🎓** that can be shared freely. 
 
-Below here you will find some of my *socials* that you can use to get in contact with me!
+Below here you will find some of my *socials* that you can use to get in contact with me! 
 
 <div align="center">
   
@@ -20,14 +20,15 @@ Below here you will find some of my *socials* that you can use to get in contact
 <pre>
 C++            | 00 hours 00 minutes
 JavaScript     | 20 hours 24 minutes
-Python         | 12 hours 45 minutes
-C#             | 05 hours 59 minutes
+Python         | 13 hours 30 minutes
+C#             | 05 hours 58 minutes
 CSS            | 03 hours 06 minutes
 HTML           | 02 hours 28 minutes
 Markdown       | 01 hours 46 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
-<sub>Last Updated: 04/22/2022 02:02:18</sub>
+SQL            | 00 hours 03 minutes
+<sub>Last Updated: 04/22/2022 15:15:51</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
