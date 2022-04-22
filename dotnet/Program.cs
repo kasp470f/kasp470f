@@ -28,40 +28,6 @@ namespace dotnet
             File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
-        private static void BuildLanguageStatisticsTable(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
-        {
-            // Get total time in seconds from WakaTime
-            double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
-
-            // Instantiate the string builder
-            string sb = string.Empty;
-
-            // Add the details
-            sb += "<details>" + "\n";
-            sb += "<summary align=\"center\"><strong>Language Statistics📈</strong></summary>\n<br>" + "\n";
-
-            //Setup table
-            sb += "<table align=\"center\">" + "\n";
-            sb += "\t<tr>\n\t\t<th>Language</th>\n\t\t<th>Time Spent</th>\n\t</tr>" + "\n";
-
-            // Get the languages from the data
-            foreach (var language in wakatimeLanguages["data"])
-            {
-                double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
-                TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                sb += $"\t<tr>\n\t\t<td>{language["name"]}</td>\n\t\t<td>{string.Format("{0:D2}h {1:D2}m", t.Hours, t.Minutes)}</td>\n\t</tr>" + "\n";
-            }
-
-            // Close table
-            sb += "</table>" + "\n";
-            sb += $"<p align=\"center\"><sub>Last Updated: {DateTime.Now}</sub></p>" + "\n";
-            sb += $"<p align=\"center\"><sub>Data first recorded on 31th. January of 2022</sub></p>" + "\n";
-            sb += ("</details>");
-
-            // Output the string
-            buildString = sb.ToString();
-        }
-
         private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
         {
             // Get total time in seconds from WakaTime
@@ -87,7 +53,12 @@ namespace dotnet
                 {
                     double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
                     TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
-                    sb += $"{language["name"].ToString().PadRight(15)}| {string.Format("{0:D2} hours {1:D2} minutes", t.Hours, t.Minutes)}" + "\n";
+
+                    string timeFormat = string.Format("{0} hours {1:D2} minutes", Math.Floor(t.TotalHours).ToString().PadLeft(2,'0'), t.Minutes);
+                    string languageName = language["name"].ToString().PadRight(15);
+
+                    sb += $"{languageName}| {timeFormat}" + "\n";
+                    Console.WriteLine($"{languageName}| {timeFormat}");
                 }
             }
 
