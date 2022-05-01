@@ -20,7 +20,7 @@ Below here you will find some of my *socials* that you can use to get in contact
 <pre>
 C++            | 24 hours 01 minutes
 JavaScript     | 20 hours 25 minutes
-Python         | 19 hours 06 minutes
+Python         | 19 hours 07 minutes
 C#             | 06 hours 23 minutes
 CSS            | 03 hours 07 minutes
 HTML           | 02 hours 28 minutes
@@ -28,7 +28,7 @@ Markdown       | 01 hours 48 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 04/29/2022 02:04:01</sub>
+<sub>Last Updated: 05/01/2022 02:25:11</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
