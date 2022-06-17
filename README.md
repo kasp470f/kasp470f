@@ -18,19 +18,19 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-C++            | 24 hours 47 minutes
-JavaScript     | 21 hours 34 minutes
+C++            | 25 hours 15 minutes
+JavaScript     | 21 hours 50 minutes
 Python         | 19 hours 00 minutes
-C#             | 09 hours 28 minutes
+C#             | 09 hours 29 minutes
 CSS            | 05 hours 58 minutes
 Blazor         | 03 hours 16 minutes
-HTML           | 03 hours 09 minutes
-Markdown       | 01 hours 53 minutes
+HTML           | 03 hours 14 minutes
+Markdown       | 01 hours 52 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
 CSHTML         | 00 hours 04 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 06/15/2022 02:06:40</sub>
+<sub>Last Updated: 06/17/2022 02:01:28</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
