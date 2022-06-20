@@ -22,7 +22,7 @@ C++            | 25 hours 15 minutes
 JavaScript     | 21 hours 50 minutes
 Python         | 19 hours 01 minutes
 C#             | 09 hours 29 minutes
-CSS            | 05 hours 58 minutes
+CSS            | 05 hours 59 minutes
 Blazor         | 03 hours 34 minutes
 HTML           | 03 hours 14 minutes
 Markdown       | 01 hours 53 minutes
@@ -30,7 +30,7 @@ TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
 CSHTML         | 00 hours 04 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 06/19/2022 02:11:58</sub>
+<sub>Last Updated: 06/20/2022 02:01:56</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
