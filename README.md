@@ -31,7 +31,7 @@ TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
 CSHTML         | 00 hours 04 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 07/08/2022 02:15:10</sub>
+<sub>Last Updated: 07/10/2022 02:23:32</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
