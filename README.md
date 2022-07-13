@@ -22,16 +22,16 @@ C++            | 25 hours 17 minutes
 JavaScript     | 22 hours 02 minutes
 Python         | 19 hours 02 minutes
 C#             | 09 hours 29 minutes
-CSS            | 05 hours 59 minutes
-mcfunction     | 04 hours 08 minutes
-Blazor         | 03 hours 34 minutes
+CSS            | 05 hours 58 minutes
+mcfunction     | 04 hours 40 minutes
+Blazor         | 03 hours 35 minutes
 HTML           | 03 hours 14 minutes
 Markdown       | 01 hours 53 minutes
 TypeScript     | 00 hours 59 minutes
 Lua            | 00 hours 47 minutes
 CSHTML         | 00 hours 03 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 07/11/2022 02:09:59</sub>
+<sub>Last Updated: 07/13/2022 02:10:42</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
