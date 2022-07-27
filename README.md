@@ -19,19 +19,19 @@ Below here you will find some of my *socials* that you can use to get in contact
 <div align="center">
 <pre>
 C++            | 25 hours 20 minutes
+mcfunction     | 23 hours 50 minutes
 JavaScript     | 22 hours 05 minutes
-mcfunction     | 21 hours 43 minutes
 Python         | 19 hours 04 minutes
 C#             | 09 hours 30 minutes
 CSS            | 05 hours 59 minutes
 Blazor         | 03 hours 35 minutes
-HTML           | 03 hours 14 minutes
+HTML           | 03 hours 15 minutes
 Markdown       | 01 hours 53 minutes
-TypeScript     | 00 hours 59 minutes
-Lua            | 00 hours 47 minutes
+TypeScript     | 01 hours 00 minutes
+Lua            | 00 hours 48 minutes
 CSHTML         | 00 hours 03 minutes
 SQL            | 00 hours 03 minutes
-<sub>Last Updated: 07/25/2022 02:11:10</sub>
+<sub>Last Updated: 07/27/2022 02:23:24</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
