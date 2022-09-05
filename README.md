@@ -36,7 +36,7 @@ Batchfile      | 00 hours 01 minutes
 Git            | 00 hours 00 minutes
 INI            | 00 hours 00 minutes
 Image (png)    | 00 hours 00 minutes
-<sub>Last Updated: 09/05/2022 02:32:49</sub>
+<sub>Last Updated: 09/05/2022 11:11:07</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
