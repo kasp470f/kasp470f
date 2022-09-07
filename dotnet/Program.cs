@@ -25,7 +25,7 @@ namespace dotnet
             BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
-            File.WriteAllText("README.md", readme + statisticBuildString);
+            // File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
         private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
@@ -49,7 +49,8 @@ namespace dotnet
             // Get the languages from the data
             foreach (var language in wakatimeLanguages["data"])
             {
-                if(NotInclude(language["name"].ToString()))
+                var languageString = language["name"].ToString();
+                if(Ignore(languageString))
                 {
                     double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
                     TimeSpan t = TimeSpan.FromSeconds(spentOnLanguage);
@@ -87,9 +88,24 @@ namespace dotnet
             return JObject.Parse(text);
         }
 
-        private static bool NotInclude(string name)
+        private static bool Ignore(string name)
         {
-            List<string> exclude = new List<string> {"JSON","Other","XAML","Git Config","YAML","Text","Perl","XML","Objective-C","C" };
+            var exclude = new List<string> {
+                "JSON",
+                "Other",
+                "XAML",
+                "Git Config",
+                "YAML",
+                "Text",
+                "Perl",
+                "XML",
+                "Objective-C",
+                "C",
+                "GIT",
+                "INI",
+                "Image (png)",
+                "Batchfile"
+            };
             return !exclude.Contains(name);
         }
     }
