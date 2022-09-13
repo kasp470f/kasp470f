@@ -25,7 +25,7 @@ namespace dotnet
             BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
-            // File.WriteAllText("README.md", readme + statisticBuildString);
+            File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
         private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
