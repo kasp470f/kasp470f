@@ -17,5 +17,5 @@ jobs:
           git config --global user.name "kasp470f"
           git config --global user.email "11627@student.eadania.dk"
 
-          git commit -am "Update to the README Components" -m "Sent a daily request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
+          git commit -am "Update to the README Components" -m "Sent a request to the WakaTime JSON API.\nThis action has been triggered by a ${{ github.event_name }} event"
           git push
