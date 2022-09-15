@@ -20,7 +20,7 @@ Below here you will find some of my *socials* that you can use to get in contact
     <br>
         <div align="center">
             <pre>
-                TypeScript      | 65 hours 28 minutes
+TypeScript      | 65 hours 28 minutes
 HTML            | 41 hours 01 minutes
 C#              | 28 hours 40 minutes
 C++             | 25 hours 07 minutes
@@ -33,7 +33,7 @@ Markdown        | 01 hours 52 minutes
 Lua             | 00 hours 47 minutes
 SQL             | 00 hours 03 minutes
 
-                <sub>Last Updated: 15/09/2022 12:33:28</sub>
+                <sub>Last Updated: 15/09/2022 12:37:23</sub>
                 <sub>Data first recorded on 31th. January of 2022</sub>
             </pre>
         </div>
