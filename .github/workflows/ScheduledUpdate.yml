@@ -11,7 +11,7 @@ jobs:
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
-          dotnet-version: '5.0.x'
+          dotnet-version: '6.0.x'
       - name: Run .NET Project
         run: dotnet run --project ./dotnet
       - name: Commit and push changes
