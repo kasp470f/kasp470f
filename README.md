@@ -33,7 +33,7 @@ Markdown        | 01 hours 52 minutes
 Lua             | 00 hours 47 minutes
 SQL             | 00 hours 03 minutes
 
-<sub>Last Updated: 15/09/2022 12:39:51</sub>
+<sub>Last Updated: 17/09/2022 06:20:24</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
