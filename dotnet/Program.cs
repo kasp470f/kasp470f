@@ -14,7 +14,7 @@ namespace dotnet
         static async Task Main(string[] args)
         {
             // Get README.md file
-            string readme = File.ReadAllText("markdown_components/description.md");
+            string readme = File.ReadAllText("../markdown_components/description.md");
 
             // Get data from wakatime.com
             JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
@@ -25,7 +25,7 @@ namespace dotnet
             BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
 
             // Add the new statistics to the README.md file
-            // File.WriteAllText("README.md", readme + statisticBuildString);
+            File.WriteAllText("README.md", readme + statisticBuildString);
         }
 
         private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
