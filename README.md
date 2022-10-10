@@ -14,29 +14,26 @@ Below here you will find some of my *socials* that you can use to get in contact
 
 <br>
 <details>
-<summary align="center"><strong>Programming Language Statistics</strong></summary>
+<summary align="center">
+<strong>Programming Language Statistics</strong>
+</summary>
 <br>
 <div align="center">
 <pre>
-HTML           | 25 hours 48 minutes
-C++            | 24 hours 59 minutes
-mcfunction     | 24 hours 25 minutes
-TypeScript     | 24 hours 18 minutes
-C#             | 23 hours 50 minutes
-JavaScript     | 21 hours 48 minutes
-Python         | 18 hours 48 minutes
-SCSS           | 07 hours 33 minutes
-CSS            | 05 hours 55 minutes
-Blazor         | 03 hours 32 minutes
-Markdown       | 01 hours 51 minutes
-Lua            | 00 hours 46 minutes
-CSHTML         | 00 hours 03 minutes
-SQL            | 00 hours 03 minutes
-Batchfile      | 00 hours 01 minutes
-Git            | 00 hours 00 minutes
-INI            | 00 hours 00 minutes
-Image (png)    | 00 hours 00 minutes
-<sub>Last Updated: 09/05/2022 11:11:07</sub>
+TypeScript      | 65 hours 28 minutes
+HTML            | 41 hours 01 minutes
+C#              | 28 hours 40 minutes
+C++             | 25 hours 07 minutes
+mcfunction      | 24 hours 33 minutes
+JavaScript      | 21 hours 55 minutes
+Python          | 18 hours 54 minutes
+CSS             | 15 hours 42 minutes
+Blazor          | 03 hours 34 minutes
+Markdown        | 01 hours 52 minutes
+Lua             | 00 hours 47 minutes
+SQL             | 00 hours 03 minutes
+
+<sub>Last Updated: 24/09/2022 06:24:49</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>

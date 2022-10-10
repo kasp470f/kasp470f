@@ -1,0 +1,23 @@
+name: Schedule Update Action to .README Programming Languages Section
+on: 
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 6 * * 6'
+jobs:
+  Update_README:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: '6.0.x'
+      - name: Run .NET Project
+        run: dotnet run --project ./dotnet
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "kasp470f"
+          git config --global user.email "11627@student.eadania.dk"
+
+          git commit -am "Weekly Update to README" -m "Sent a request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
+          git push

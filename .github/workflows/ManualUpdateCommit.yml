@@ -1,8 +1,5 @@
-name: README Update Schedule Action
+name: Manual Update on Commit
 on: 
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0 * * 5'
   push:
 jobs:
   Update_README:
@@ -12,7 +9,7 @@ jobs:
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
-          dotnet-version: '5.0.x'
+          dotnet-version: '6.0.x'
       - name: Run .NET Project
         run: dotnet run --project ./dotnet
       - name: Commit and push changes
@@ -20,6 +17,5 @@ jobs:
           git config --global user.name "kasp470f"
           git config --global user.email "11627@student.eadania.dk"
 
-          git add -A
-          git commit -m "Update to the README Components" -m "Sent a daily request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
+          git commit -am "Update README by Manual Commit" -m "Sent a request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
           git push
