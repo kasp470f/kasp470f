@@ -56,10 +56,13 @@ class Program
             }
             else {
                 languages.Add(language);
-                Console.WriteLine(language);
-                languageStringSection += language.ToString() + "\n";
             }
         }
+
+        languages.Sort((x, y) => y.Time.CompareTo(x.Time));
+        languageStringSection = string.Join('\n', languages);
+        languages.ForEach(x => Console.WriteLine(x));
+
 
         // Build the string
         langComponent = langComponent.Replace("{{LANGUAGE_SECTION}}", languageStringSection);
