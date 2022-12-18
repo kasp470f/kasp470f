@@ -19,56 +19,66 @@ class Program
         JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
 
         // Build the new data in a markdown structure
-        BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime, out string statisticBuildString);
+        string statisticBuildString = BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime);
 
-        // Add the new statistics to the README.md file
-        File.WriteAllText("README.md", readme + statisticBuildString);
+        if(statisticBuildString != null) {
+            // Add the new statistics to the README.md file
+            File.WriteAllText("README.md", readme + statisticBuildString);
+        }
     }
 
-    private static void BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime, out string buildString)
+    private static string BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime)
     {
-        // Get total time in seconds from WakaTime
-        double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
-
-        // Instantiate the language component
-        string langComponent = File.ReadAllText("markdown_components/language_section.md");
-
-        // Get the languages from the data
-        var tempLanguages = new List<Language>();
-        foreach (var language in wakatimeLanguages["data"])
+        try
         {
-            var languageString = language["name"].ToString();
-            if (Ignore(languageString))
+            // Get total time in seconds from WakaTime
+            double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
+
+            // Instantiate the language component
+            string langComponent = File.ReadAllText("markdown_components/language_section.md");
+
+            // Get the languages from the data
+            var tempLanguages = new List<Language>();
+            foreach (var language in wakatimeLanguages["data"])
             {
-                var currentLanguage = new Language();
-                double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
-                currentLanguage.Time = TimeSpan.FromSeconds(spentOnLanguage);
-                currentLanguage.Name = language["name"].ToString();
-                tempLanguages.Add(currentLanguage);
+                var languageString = language["name"].ToString();
+                if (Ignore(languageString))
+                {
+                    var currentLanguage = new Language();
+                    double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
+                    currentLanguage.Time = TimeSpan.FromSeconds(spentOnLanguage);
+                    currentLanguage.Name = language["name"].ToString();
+                    tempLanguages.Add(currentLanguage);
+                }
             }
-        }
 
-        string languageStringSection = string.Empty;
-        foreach (var language in tempLanguages)
+            string languageStringSection = string.Empty;
+            foreach (var language in tempLanguages)
+            {
+                if(Same(language.Name, out string keyName)) {
+                    tempLanguages.Single(x => x.Name == keyName).Time += language.Time;
+                }
+                else {
+                    languages.Add(language);
+                }
+            }
+
+            languages.Sort((x, y) => y.Time.CompareTo(x.Time));
+            languageStringSection = string.Join('\n', languages);
+            languages.ForEach(x => Console.WriteLine(x));
+
+
+            // Build the string
+            langComponent = langComponent.Replace("{{LANGUAGE_SECTION}}", languageStringSection);
+            langComponent = langComponent.Replace("{{TIME_OF_UPDATE}}", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+
+            return langComponent;
+        }
+        catch (System.Exception ex)
         {
-            if(Same(language.Name, out string keyName)) {
-                tempLanguages.Single(x => x.Name == keyName).Time += language.Time;
-            }
-            else {
-                languages.Add(language);
-            }
+            Console.WriteLine(ex.Message);
+            return null;
         }
-
-        languages.Sort((x, y) => y.Time.CompareTo(x.Time));
-        languageStringSection = string.Join('\n', languages);
-        languages.ForEach(x => Console.WriteLine(x));
-
-
-        // Build the string
-        langComponent = langComponent.Replace("{{LANGUAGE_SECTION}}", languageStringSection);
-        langComponent = langComponent.Replace("{{TIME_OF_UPDATE}}", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-
-        buildString = langComponent;
     }
 
     static HttpClient client = new HttpClient();
