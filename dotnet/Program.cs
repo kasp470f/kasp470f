@@ -76,22 +76,12 @@ class Program
         }
         catch (System.Exception ex)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
+
             Console.WriteLine(ex.Message);
+            Console.WriteLine(ex.StackTrace);
             return null;
         }
-    }
-
-    static HttpClient client = new HttpClient();
-    private static async Task<JObject> GetData(string URL)
-    {
-        string APIRequest = $"{URL}";
-        string text = null;
-        HttpResponseMessage response = await client.GetAsync(APIRequest);
-        if (response.IsSuccessStatusCode)
-        {
-            text = await response.Content.ReadAsStringAsync();
-        }
-        return JObject.Parse(text);
     }
 
     private static bool Ignore(string name)
@@ -123,12 +113,24 @@ class Program
         };
         return sameLanguage.TryGetValue(checkLanguage, out keyName);
     }
+
+    static HttpClient client = new HttpClient();
+    private static async Task<JObject> GetData(string URL)
+    {
+        string APIRequest = $"{URL}";
+        string text = null;
+        HttpResponseMessage response = await client.GetAsync(APIRequest);
+        if (response.IsSuccessStatusCode)
+        {
+            text = await response.Content.ReadAsStringAsync();
+        }
+        return JObject.Parse(text);
+    }
 }
 
 class Language {
     public string Name { get; set; }
     public TimeSpan Time { get; set; }
-
 
     private string TimeFormat => string.Format("{0} hours {1:D2} minutes", Math.Floor(Time.TotalHours).ToString().PadLeft(2, '0'), Time.Minutes);
 
