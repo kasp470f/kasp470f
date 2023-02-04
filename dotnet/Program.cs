@@ -38,8 +38,9 @@ class Program
             string langComponent = File.ReadAllText("markdown_components/language_section.md");
 
             // Get the languages from the data
+            var dataList = wakatimeLanguages["data"].ToList();
             var tempLanguages = new List<Language>();
-            foreach (var language in wakatimeLanguages["data"])
+            foreach (var language in dataList)
             {
                 var languageString = language["name"].ToString();
                 if (Ignore(languageString))

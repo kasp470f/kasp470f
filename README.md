@@ -1,8 +1,8 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, currently studying to become a **Software Developer** at [![Icon](/icons/Dania.png)eaDania Skive](https://eadania.com/). <br>
+My name is **Kasper Wissendorf**, a **Software Developer** from Denmark<br/>
 I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
-On this GitHub Profile, I will upload some **projects📦** that I personally create. I will also upload **assignments📝** that I have been given by my teachers and **exam projects🎓** that can be shared freely. 
+On this GitHub Profile, I will upload some **projects📦** that I personally create.
 
 Below here you will find some of my *socials* that you can use to get in contact with me! 
 
@@ -17,19 +17,19 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-TypeScript      | 166 hours 48 minutes
-HTML            | 103 hours 21 minutes
-CSS             | 47 hours 55 minutes
-C#              | 37 hours 40 minutes
-C++             | 25 hours 17 minutes
-mcfunction      | 24 hours 43 minutes
-JavaScript      | 22 hours 06 minutes
-Python          | 20 hours 23 minutes
+TypeScript      | 229 hours 00 minutes
+HTML            | 141 hours 09 minutes
+CSS             | 70 hours 19 minutes
+C#              | 56 hours 55 minutes
+C++             | 25 hours 06 minutes
+mcfunction      | 24 hours 32 minutes
+JavaScript      | 21 hours 55 minutes
+Python          | 20 hours 13 minutes
 Blazor          | 03 hours 34 minutes
-Markdown        | 02 hours 02 minutes
+Markdown        | 02 hours 00 minutes
 Lua             | 00 hours 48 minutes
-SQL             | 00 hours 02 minutes
-<sub>Last Updated: 28/12/2022 15:39:49</sub>
+SQL             | 00 hours 03 minutes
+<sub>Last Updated: 04/02/2023 20:53:04</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
