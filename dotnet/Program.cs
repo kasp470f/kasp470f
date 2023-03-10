@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 class Program
@@ -15,11 +16,12 @@ class Program
         string readme = File.ReadAllText("markdown_components/description.md");
 
         // Get data from wakatime.com
-        JObject wakatimeLanguages = await GetData("https://wakatime.com/share/@kasp470f/09fc97af-59ae-4d9d-a09c-25c3e5ab711c.json");
-        JObject wakatimeTime = await GetData("https://wakatime.com/share/@kasp470f/364a7155-4732-4077-932f-b403c54cbd9a.json");
+        wakatimeCodeActivity codeActivity = JsonConvert.DeserializeObject<wakatimeCodeActivity>(await GetData("https://wakatime.com/share/@kasp470f/d96b4560-101c-4908-a8ee-175522ba79f5.json"));
+
+        wakatimeLanguages languages = JsonConvert.DeserializeObject<wakatimeLanguages>(await GetData("https://wakatime.com/share/@kasp470f/96e0ab78-56ba-4463-8fc3-2329e5b0275d.json"));
 
         // Build the new data in a markdown structure
-        string statisticBuildString = BuildLanguageStatisticsBlock(wakatimeLanguages, wakatimeTime);
+        string statisticBuildString = BuildLanguageStatisticsBlock(languages, codeActivity);
 
         if(statisticBuildString != null) {
             // Add the new statistics to the README.md file
@@ -27,28 +29,28 @@ class Program
         }
     }
 
-    private static string BuildLanguageStatisticsBlock(JObject wakatimeLanguages, JObject wakatimeTime)
+    private static string BuildLanguageStatisticsBlock(wakatimeLanguages wakatimeLanguages, wakatimeCodeActivity wakatimeCodeActivity)
     {
         try
         {
             // Get total time in seconds from WakaTime
-            double totalTime = wakatimeTime["data"]["grand_total"]["total_seconds"].Value<double>();
+            double totalTime = wakatimeCodeActivity.data.grand_total.total_seconds;
 
             // Instantiate the language component
             string langComponent = File.ReadAllText("markdown_components/language_section.md");
 
             // Get the languages from the data
-            var dataList = wakatimeLanguages["data"].ToList();
+            var dataList = wakatimeLanguages.data;
             var tempLanguages = new List<Language>();
             foreach (var language in dataList)
             {
-                var languageString = language["name"].ToString();
+                var languageString = language.name;
                 if (Ignore(languageString))
                 {
                     var currentLanguage = new Language();
-                    double spentOnLanguage = (double.Parse(language["percent"].ToString()) / 100) * totalTime;
+                    double spentOnLanguage = (language.percent / 100) * totalTime;
                     currentLanguage.Time = TimeSpan.FromSeconds(spentOnLanguage);
-                    currentLanguage.Name = language["name"].ToString();
+                    currentLanguage.Name = language.name.ToString();
                     tempLanguages.Add(currentLanguage);
                 }
             }
@@ -81,6 +83,10 @@ class Program
 
             Console.WriteLine(ex.Message);
             Console.WriteLine(ex.StackTrace);
+            Console.WriteLine(ex.InnerException);
+
+            Console.ForegroundColor = ConsoleColor.White;
+
             return null;
         }
     }
@@ -116,7 +122,7 @@ class Program
     }
 
     static HttpClient client = new HttpClient();
-    private static async Task<JObject> GetData(string URL)
+    private static async Task<string> GetData(string URL)
     {
         string APIRequest = $"{URL}";
         string text = null;
@@ -125,18 +131,6 @@ class Program
         {
             text = await response.Content.ReadAsStringAsync();
         }
-        return JObject.Parse(text);
-    }
-}
-
-class Language {
-    public string Name { get; set; }
-    public TimeSpan Time { get; set; }
-
-    private string TimeFormat => string.Format("{0} hours {1:D2} minutes", Math.Floor(Time.TotalHours).ToString().PadLeft(2, '0'), Time.Minutes);
-
-    public override string ToString()
-    {
-        return $"{Name.PadRight(15)} | {TimeFormat}";
+        return text;
     }
 }
