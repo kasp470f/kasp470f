@@ -81,9 +81,7 @@ class Program
         {
             Console.ForegroundColor = ConsoleColor.Red;
 
-            Console.WriteLine(ex.Message);
-            Console.WriteLine(ex.StackTrace);
-            Console.WriteLine(ex.InnerException);
+            Console.WriteLine(ex);
 
             Console.ForegroundColor = ConsoleColor.White;
 
