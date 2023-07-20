@@ -25,7 +25,7 @@ class Program
 
         if(statisticBuildString != null) {
             // Add the new statistics to the README.md file
-            File.WriteAllText("README.md", readme + statisticBuildString);
+            File.WriteAllText("../README.md", readme + statisticBuildString);
         }
     }
 
