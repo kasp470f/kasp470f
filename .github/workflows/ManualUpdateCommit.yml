@@ -10,10 +10,9 @@ jobs:
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: '6.0.x'
-      - name: CD into directory
-        run: cd dotnet
       - name: Run .NET Project
-        run: dotnet run --project ./dotnet
+        working-directory: ./dotnet
+        run: dotnet run
       - name: Commit and push changes
         run: |
           git config --global user.name "kasp470f"
