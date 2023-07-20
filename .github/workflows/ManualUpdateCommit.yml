@@ -11,11 +11,12 @@ jobs:
         with:
           dotnet-version: '6.0.x'
       - name: Run .NET Project
-        run: dotnet run --project ./dotnet
+        working-directory: ./dotnet
+        run: dotnet run
       - name: Commit and push changes
         run: |
           git config --global user.name "kasp470f"
-          git config --global user.email "11627@student.eadania.dk"
+          git config --global user.email "kasperwissendorf2011@gmail.com"
 
           git commit -am "Update README by Manual Commit" -m "Sent a request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
           git push
