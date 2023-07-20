@@ -13,7 +13,7 @@ class Program
     static async Task Main(string[] args)
     {
         // Get README.md file
-        string readme = File.ReadAllText("markdown_components/description.md");
+        string readme = File.ReadAllText("../markdown_components/description.md");
 
         // Get data from wakatime.com
         wakatimeCodeActivity codeActivity = JsonConvert.DeserializeObject<wakatimeCodeActivity>(await GetData("https://wakatime.com/share/@kasp470f/d96b4560-101c-4908-a8ee-175522ba79f5.json"));
@@ -29,18 +29,19 @@ class Program
         }
     }
 
-    private static string BuildLanguageStatisticsBlock(wakatimeLanguages wakatimeLanguages, wakatimeCodeActivity wakatimeCodeActivity)
+    private static string BuildLanguageStatisticsBlock(wakatimeLanguages _wakatimeLanguages, wakatimeCodeActivity _wakatimeCodeActivity)
     {
         try
         {
+            Console.WriteLine(_wakatimeCodeActivity);
             // Get total time in seconds from WakaTime
-            double totalTime = wakatimeCodeActivity.data.grand_total.total_seconds;
+            double totalTime = _wakatimeCodeActivity.data.grand_total.total_seconds;
 
             // Instantiate the language component
-            string langComponent = File.ReadAllText("markdown_components/language_section.md");
+            string langComponent = File.ReadAllText(@"../markdown_components/language_section.md");
 
             // Get the languages from the data
-            var dataList = wakatimeLanguages.data;
+            var dataList = _wakatimeLanguages.data;
             var tempLanguages = new List<Language>();
             foreach (var language in dataList)
             {
