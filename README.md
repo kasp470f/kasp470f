@@ -30,7 +30,7 @@ Blazor          |   03 hours 37 minutes
 Markdown        |   02 hours 15 minutes
 Lua             |   00 hours 47 minutes
 SQL             |   00 hours 06 minutes
-<sub>Last Updated: 26/07/2023 11:53:42</sub>
+<sub>Last Updated: 26/07/2023 09:54:36</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
