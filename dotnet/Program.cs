@@ -33,7 +33,6 @@ class Program
     {
         try
         {
-            Console.WriteLine(_wakatimeCodeActivity);
             // Get total time in seconds from WakaTime
             double totalTime = _wakatimeCodeActivity.data.grand_total.total_seconds;
 

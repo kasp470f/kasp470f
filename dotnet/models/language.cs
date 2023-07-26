@@ -8,6 +8,6 @@ class Language {
 
     public override string ToString()
     {
-        return $"{Name.PadRight(15)} | {TimeFormat}";
+        return $"{Name.PadRight(15)} | {TimeFormat.PadLeft(21)}";
     }
 }
