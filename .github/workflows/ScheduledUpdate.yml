@@ -17,8 +17,7 @@ jobs:
         run: dotnet run
       - name: Commit and push changes
         run: |
-          git config --global user.name "kasp470f"
-          git config --global user.email "11627@student.eadania.dk"
+          git config --global user.name "ReadME [BOT]"
 
           git commit -am "Weekly Update to README" -m "Sent a request to the WakaTime JSON API. This action has been triggered by a ${{ github.event_name }} event"
           git push
