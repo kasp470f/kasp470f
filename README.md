@@ -31,7 +31,7 @@ Java            |   02 hours 28 minutes
 Markdown        |   02 hours 21 minutes
 Lua             |   00 hours 49 minutes
 SQL             |   00 hours 07 minutes
-<sub>Last Updated: 14/08/2023 17:56:17</sub>
+<sub>Last Updated: 14/08/2023 17:57:23</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
