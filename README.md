@@ -1,6 +1,6 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, a **Software Developer** from Denmark<br/>
+My name is **Kasper Wissendorf**, a **Software Developer** from Denmark <img src="/icons/denmark85.PNG" width="20"><br/>
 I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
 On this GitHub Profile, I will upload some **projects📦** that I personally create.
 
@@ -17,20 +17,21 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-TypeScript      |  412 hours 39 minutes
-HTML            |  244 hours 02 minutes
-C#              |  157 hours 38 minutes
-CSS             |  123 hours 46 minutes
-Python          |   62 hours 07 minutes
-Binary          |   38 hours 11 minutes
-JavaScript      |   26 hours 23 minutes
-C++             |   25 hours 20 minutes
-mcfunction      |   24 hours 45 minutes
-Blazor          |   03 hours 37 minutes
-Markdown        |   02 hours 27 minutes
+TypeScript      |  412 hours 56 minutes
+HTML            |  244 hours 27 minutes
+C#              |  163 hours 52 minutes
+CSS             |  123 hours 42 minutes
+Python          |   62 hours 08 minutes
+Binary          |   42 hours 24 minutes
+JavaScript      |   26 hours 27 minutes
+C++             |   25 hours 24 minutes
+mcfunction      |   24 hours 48 minutes
+Blazor          |   03 hours 32 minutes
+Java            |   02 hours 28 minutes
+Markdown        |   02 hours 21 minutes
 Lua             |   00 hours 49 minutes
 SQL             |   00 hours 07 minutes
-<sub>Last Updated: 07/08/2023 16:57:57</sub>
+<sub>Last Updated: 14/08/2023 17:56:17</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
