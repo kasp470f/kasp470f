@@ -28,14 +28,9 @@ C++             |   25 hours 24 minutes
 mcfunction      |   24 hours 48 minutes
 Blazor          |   03 hours 37 minutes
 Java            |   02 hours 32 minutes
-Markdown        |   02 hours 25 minutes
 Lua             |   00 hours 50 minutes
-SWIG            |   00 hours 14 minutes
-Prolog          |   00 hours 07 minutes
 SQL             |   00 hours 07 minutes
-TSConfig        |   00 hours 00 minutes
-Ezhil           |   00 hours 00 minutes
-<sub>Last Updated: 20/08/2023 16:11:28</sub>
+<sub>Last Updated: 23/08/2023 12:03:27</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
