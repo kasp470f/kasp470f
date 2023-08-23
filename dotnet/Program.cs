@@ -105,7 +105,13 @@ class Program
                 "GIT",
                 "INI",
                 "Image (png)",
-                "Batchfile"
+                "Batchfile",
+                "Markdown",
+                "SVG",
+                "SWIG",
+                "Prolog",
+                "TSConfig",
+                "Ezhil"
             };
         return !exclude.Select(x => x.ToLower()).Contains(name.ToLower());
     }
