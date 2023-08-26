@@ -30,7 +30,7 @@ Blazor          |   03 hours 37 minutes
 Java            |   02 hours 32 minutes
 Lua             |   00 hours 50 minutes
 SQL             |   00 hours 07 minutes
-<sub>Last Updated: 23/08/2023 12:03:27</sub>
+<sub>Last Updated: 26/08/2023 06:03:44</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
