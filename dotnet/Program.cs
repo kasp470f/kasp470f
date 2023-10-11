@@ -33,6 +33,7 @@ class Program
     {
         try
         {
+            if(_wakatimeLanguages == null || _wakatimeCodeActivity == null) throw new Exception("Data is null");
             // Get total time in seconds from WakaTime
             double totalTime = _wakatimeCodeActivity.data.grand_total.total_seconds;
 
@@ -50,6 +51,7 @@ class Program
                     var currentLanguage = new Language();
                     double spentOnLanguage = (language.percent / 100) * totalTime;
                     currentLanguage.Time = TimeSpan.FromSeconds(spentOnLanguage);
+                    if(currentLanguage.Time.Minutes == 0 && currentLanguage.Time.Hours == 0) continue;
                     currentLanguage.Name = language.name.ToString();
                     tempLanguages.Add(currentLanguage);
                 }
@@ -111,7 +113,13 @@ class Program
                 "SWIG",
                 "Prolog",
                 "TSConfig",
-                "Ezhil"
+                "Ezhil",
+                "Assembly",
+                "Bash",
+                "GDScript",
+                "ca65 assembler",
+                "ActionScript 3",
+                "TSQL"
             };
         return !exclude.Select(x => x.ToLower()).Contains(name.ToLower());
     }

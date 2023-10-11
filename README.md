@@ -17,20 +17,19 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-TypeScript      |  419 hours 53 minutes
-HTML            |  248 hours 03 minutes
-C#              |  172 hours 55 minutes
-CSS             |  124 hours 38 minutes
-Python          |   66 hours 11 minutes
-Binary          |   45 hours 08 minutes
-JavaScript      |   27 hours 06 minutes
+TypeScript      |  508 hours 19 minutes
+HTML            |  273 hours 25 minutes
+C#              |  225 hours 20 minutes
+CSS             |  141 hours 59 minutes
+Python          |   83 hours 29 minutes
+Binary          |   46 hours 57 minutes
+JavaScript      |   27 hours 15 minutes
 C++             |   25 hours 24 minutes
-mcfunction      |   24 hours 48 minutes
-Blazor          |   03 hours 37 minutes
-Java            |   02 hours 32 minutes
-Lua             |   00 hours 50 minutes
-SQL             |   00 hours 07 minutes
-<sub>Last Updated: 26/08/2023 06:03:44</sub>
+mcfunction      |   24 hours 49 minutes
+Blazor          |   03 hours 34 minutes
+Java            |   02 hours 34 minutes
+Lua             |   00 hours 51 minutes
+<sub>Last Updated: 11/10/2023 09:25:19</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
