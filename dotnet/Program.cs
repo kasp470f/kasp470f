@@ -35,6 +35,7 @@ class Program
         {
             if(_wakatimeLanguages == null || _wakatimeCodeActivity == null) throw new Exception("Data is null");
             // Get total time in seconds from WakaTime
+            Console.WriteLine(_wakatimeCodeActivity);
             double totalTime = _wakatimeCodeActivity.data.grand_total.total_seconds;
 
             // Instantiate the language component
