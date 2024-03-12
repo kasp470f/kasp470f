@@ -5,7 +5,6 @@ I enjoy coding in my spare time and I find learning new `Coding Languages👨‍
 On this GitHub Profile, I will upload some **projects📦** that I personally create.
 
 Below here you will find some of my *socials* that you can use to get in contact with me! 
-
 <div align="center">
   
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
