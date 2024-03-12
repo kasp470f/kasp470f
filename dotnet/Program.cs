@@ -15,13 +15,10 @@ class Program
         // Get README.md file
         string readme = File.ReadAllText("../markdown_components/description.md");
 
-        // Get data from wakatime.com
-        wakatimeCodeActivity codeActivity = JsonConvert.DeserializeObject<wakatimeCodeActivity>(await GetData("https://wakatime.com/share/@kasp470f/d96b4560-101c-4908-a8ee-175522ba79f5.json"));
-
-        wakatimeLanguages languages = JsonConvert.DeserializeObject<wakatimeLanguages>(await GetData("https://wakatime.com/share/@kasp470f/96e0ab78-56ba-4463-8fc3-2329e5b0275d.json"));
+        wakatimeLanguages languages = JsonConvert.DeserializeObject<wakatimeLanguages>(await GetData("https://wakatime.com/share/@kasp470f/7017a95a-e41f-4bf2-ac00-4c839e09e549.json"));
 
         // Build the new data in a markdown structure
-        string statisticBuildString = BuildLanguageStatisticsBlock(languages, codeActivity);
+        string statisticBuildString = BuildLanguageStatisticsBlock(languages);
 
         if(statisticBuildString != null) {
             // Add the new statistics to the README.md file
@@ -29,15 +26,10 @@ class Program
         }
     }
 
-    private static string BuildLanguageStatisticsBlock(wakatimeLanguages _wakatimeLanguages, wakatimeCodeActivity _wakatimeCodeActivity)
+    private static string BuildLanguageStatisticsBlock(wakatimeLanguages _wakatimeLanguages)
     {
         try
         {
-            if(_wakatimeLanguages == null || _wakatimeCodeActivity == null) throw new Exception("Data is null");
-            // Get total time in seconds from WakaTime
-            Console.WriteLine(_wakatimeCodeActivity);
-            double totalTime = _wakatimeCodeActivity.data.grand_total.total_seconds;
-
             // Instantiate the language component
             string langComponent = File.ReadAllText(@"../markdown_components/language_section.md");
 
@@ -49,11 +41,12 @@ class Program
                 var languageString = language.name;
                 if (Ignore(languageString))
                 {
-                    var currentLanguage = new Language();
-                    double spentOnLanguage = (language.percent / 100) * totalTime;
-                    currentLanguage.Time = TimeSpan.FromSeconds(spentOnLanguage);
-                    if(currentLanguage.Time.Minutes == 0 && currentLanguage.Time.Hours == 0) continue;
-                    currentLanguage.Name = language.name.ToString();
+                    var currentLanguage = new Language
+                    {
+                        Name = language.name.ToString(),
+                        Time = TimeSpan.FromSeconds(language.total_seconds)
+                    };
+                    if (currentLanguage.Time.Minutes == 0 && currentLanguage.Time.Hours == 0 || currentLanguage.Time.TotalMinutes < 30) continue;
                     tempLanguages.Add(currentLanguage);
                 }
             }
@@ -80,7 +73,7 @@ class Program
 
             return langComponent;
         }
-        catch (System.Exception ex)
+        catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
 
@@ -125,7 +118,7 @@ class Program
         return !exclude.Select(x => x.ToLower()).Contains(name.ToLower());
     }
 
-    private static bool Same(string checkLanguage,out string keyName) {
+    private static bool Same(string checkLanguage, out string keyName) {
         keyName = string.Empty;
         var sameLanguage = new Dictionary<string, string>() {
             { "SCSS", "CSS" },
@@ -143,6 +136,8 @@ class Program
         if (response.IsSuccessStatusCode)
         {
             text = await response.Content.ReadAsStringAsync();
+        } else {
+            Console.WriteLine("Error: " + response.StatusCode);
         }
         return text;
     }
