@@ -5,7 +5,6 @@ I enjoy coding in my spare time and I find learning new `Coding Languages👨‍
 On this GitHub Profile, I will upload some **projects📦** that I personally create.
 
 Below here you will find some of my *socials* that you can use to get in contact with me! 
-
 <div align="center">
   
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
@@ -17,19 +16,19 @@ Below here you will find some of my *socials* that you can use to get in contact
 <br>
 <div align="center">
 <pre>
-TypeScript      |  545 hours 18 minutes
-HTML            |  305 hours 05 minutes
-C#              |  262 hours 34 minutes
-CSS             |  155 hours 49 minutes
-Python          |   83 hours 27 minutes
-Binary          |   54 hours 23 minutes
-JavaScript      |   27 hours 49 minutes
-C++             |   25 hours 28 minutes
-mcfunction      |   24 hours 51 minutes
-Blazor          |   03 hours 35 minutes
-Java            |   02 hours 30 minutes
-Lua             |   00 hours 46 minutes
-<sub>Last Updated: 15/12/2023 12:06:34</sub>
+TypeScript      |  636 hours 37 minutes
+HTML            |  366 hours 13 minutes
+C#              |  326 hours 07 minutes
+CSS             |  184 hours 40 minutes
+Python          |   84 hours 14 minutes
+Binary          |   74 hours 51 minutes
+JavaScript      |   27 hours 57 minutes
+C++             |   25 hours 23 minutes
+mcfunction      |   24 hours 49 minutes
+Blazor          |   03 hours 40 minutes
+Java            |   02 hours 34 minutes
+Lua             |   00 hours 44 minutes
+<sub>Last Updated: 12-03-2024 08:19:12</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
