@@ -28,7 +28,7 @@ mcfunction      |   24 hours 49 minutes
 Blazor          |   03 hours 40 minutes
 Java            |   02 hours 34 minutes
 Lua             |   00 hours 44 minutes
-<sub>Last Updated: 12-03-2024 08:19:12</sub>
+<sub>Last Updated: 12/03/2024 07:19:52</sub>
 <sub>Data first recorded on 31th. January of 2022</sub>
 </pre>
 </div>
