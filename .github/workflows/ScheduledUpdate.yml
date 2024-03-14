@@ -2,7 +2,7 @@ name: Schedule Update Action to .README Programming Languages Section
 on: 
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 12 * * 5'
+    - cron:  '0 12 1 * *'
 jobs:
   Update_README:
     runs-on: ubuntu-latest
