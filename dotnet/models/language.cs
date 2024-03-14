@@ -1,6 +1,6 @@
 using System;
 
-class Language {
+public class Language {
     public string Name { get; set; }
     public TimeSpan Time { get; set; }
 

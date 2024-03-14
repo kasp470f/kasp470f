@@ -1,6 +1,6 @@
 ## <p align="center">Hello there 🕹️</p>
 
-My name is **Kasper Wissendorf**, a **Software Developer** from Denmark <img src="/icons/denmark85.PNG" width="20"><br/>
+My name is **Kasper Wissendorf**, a **Software Developer** from Denmark <img src="/icons/denmark.png" width="20"><br/>
 I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
 On this GitHub Profile, I will upload some **projects📦** that I personally create.
 
