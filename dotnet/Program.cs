@@ -13,7 +13,7 @@ class Program
     static async Task Main(string[] args)
     {
         // Get README.md file
-        string readme = File.ReadAllText("../markdown_components/description.md");
+        string readme = File.ReadAllText("markdown_components/description.md");
 
         wakatimeLanguages languages = JsonConvert.DeserializeObject<wakatimeLanguages>(await GetData("https://wakatime.com/share/@kasp470f/7017a95a-e41f-4bf2-ac00-4c839e09e549.json"));
 
@@ -22,7 +22,7 @@ class Program
 
         if(statisticBuildString != null) {
             // Add the new statistics to the README.md file
-            File.WriteAllText("../README.md", readme + statisticBuildString);
+            File.WriteAllText("README.md", readme + statisticBuildString);
         }
     }
 
@@ -31,7 +31,7 @@ class Program
         try
         {
             // Instantiate the language component
-            string langComponent = File.ReadAllText(@"../markdown_components/language_section.md");
+            string langComponent = File.ReadAllText(@"markdown_components/language_section.md");
 
             // Get the languages from the data
             var dataList = _wakatimeLanguages.data;
