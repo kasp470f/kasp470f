@@ -1,0 +1,50 @@
+name: update
+
+on:
+	schedule:
+		- cron: '0 0 * * 0' # weekly on Sundays at 00:00 UTC
+
+workflow_dispatch:
+
+permissions:
+  contents: write 
+
+jobs:
+	generate-banner:
+		name: Generate and commit banner
+		runs-on: ubuntu-latest
+		steps:
+			- name: Checkout repository
+				uses: actions/checkout@v4
+				with:
+					fetch-depth: 0
+					persist-credentials: false
+
+			- name: Setup Python
+				uses: actions/setup-python@v4
+				with:
+					python-version: '3.x'
+
+			- name: Install dependencies
+				run: |
+					python -m pip install --upgrade pip
+					pip install -r scripts/generate_banner/requirements.txt
+
+			- name: Run banner generator
+				run: |
+					python scripts/generate_banner/generate_banner.py --username kasp470f --year $(date +'%Y') --header "Hello there!" --header-size 46 --header-offset 0
+
+			- name: Commit banner if changed
+				env:
+					PAT: ${{ secrets.COMMIT_DATA_PAT }}
+				run: |
+					set -e
+					if [ -n "$(git status --porcelain)" ]; then
+            git config --global user.name 'kasp470f'
+            git config --global user.email 'kasp470f@users.noreply.github.com'
+            git commit -am "Update banner - $(date +'%Y-%m-%d')"
+            git push
+					else
+						echo "No changes to commit"
+					fi
+
