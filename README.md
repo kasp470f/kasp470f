@@ -1,5 +1,5 @@
-[![Header](public/banner_dark.gif##gh-dark-mode-only)](#)
-[![Header](public/banner_light.gif##gh-light-mode-only)](#)
+[![Header](public/banner_dark.gif##gh-dark-mode-only)
+![Header](public/banner_light.gif##gh-light-mode-only)](#)
 
 # Kasper Wissendorf ‎ ‎ — ‎ ‎ Software Developer🕹️
 
