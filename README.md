@@ -5,6 +5,8 @@
 
 Passionate developer from Denmark. I build small projects and experiments, and I share tools and demos here on my GitHub profile.
 
+---
+
 | Table of Contents |
 |---|
 | [About](#about) |
