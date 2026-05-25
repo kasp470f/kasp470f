@@ -325,14 +325,14 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--username", required=True)
     p.add_argument("--year", type=int, default=datetime.date.today().year)
-    p.add_argument("--token", default=None, help="GitHub token (optional). If not set, reads GITHUB_TOKEN env var.)")
+    p.add_argument("--token", default=None, help="GitHub token (optional). If not set, reads PAT env var.)")
     p.add_argument("--header", default="", help="Header text to render at the top (default empty)")
     p.add_argument("--header-size", type=int, default=48, help="Header font size in px")
     p.add_argument("--header-offset", type=int, default=24, help="Vertical offset in pixels to nudge header down (can be negative)")
     args = p.parse_args()
     # use header size as provided (default 48)
 
-    token = args.token or os.getenv("GITHUB_TOKEN")
+    token = args.token or os.getenv("PAT")
     try:
         weeks = fetch_contributions(args.username, args.year, token)
     except Exception as e:

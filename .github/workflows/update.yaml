@@ -30,12 +30,14 @@ jobs:
           pip install -r scripts/generate_banner/requirements.txt
 
       - name: Run banner generator
+        env:
+          PAT: ${{ secrets.PAT }}
         run: |
-          python scripts/generate_banner/generate_banner.py --username kasp470f --year $(date +'%Y') --header "Hello there!" --header-size 46 --header-offset 0
+          python scripts/generate_banner/generate_banner.py --username kasp470f --header "Hello there!" --header-size 48 --header-offset -32
 
       - name: Commit banner if changed
         env:
-          PAT: ${{ secrets.COMMIT_DATA_PAT }}
+          PAT: ${{ secrets.PAT }}
         run: |
           set -e
           if [ -n "$(git status --porcelain)" ]; then
