@@ -1,13 +1,22 @@
 ![Header](public/banner_dark.gif##gh-dark-mode-only)
 ![Header](public/banner_light.gif##gh-light-mode-only)
 
-My name is **Kasper Wissendorf**, a **Software Developer** from Denmark<br/>
-I enjoy coding in my spare time and I find learning new `Coding Languages👨‍💻` exciting!<br/>
-On this GitHub Profile, I will upload some **projects📦** that I personally create.
+# Kasper Wissendorf ‎ ‎ — ‎ ‎ Software Developer🕹️
 
-Below here you will find some of my *socials* that you can use to get in contact with me! 
-<div align="center">
-  
+Passionate developer from Denmark. I build small projects and experiments, and I share tools and demos here on my GitHub profile.
+
+## Table of Contents
+
+|   |
+|---|
+| [About](#about) |
+| [Socials](#socials) |
+
+## About
+
+I enjoy learning new languages and building practical projects in my spare time. This repository hosts profile assets, utilities, and small demos I create.
+
+## Socials
+ 
 [![StackOverflow Badge](https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=flat-square&logo=Stack-Overflow&logoColor=white)](https://stackoverflow.com/users/18100435/kasper-wissendorf)
-</div>
-
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kasper-wissendorf-7279011b6/)
