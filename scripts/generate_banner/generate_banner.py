@@ -27,8 +27,9 @@ PALETTES = {
 
 SQUARE = 10
 PADDING = 4
-# Maximum banner height in pixels. Set to None to disable the clamp.
+# Maximum banner values in pixels. Set to None to disable the clamp.
 MAX_BANNER_HEIGHT = 120
+BANNER_WIDTH = 840
 
 import random
 import math
@@ -122,6 +123,27 @@ def draw_grid_image(grid, square=12, padding=4, header="", font=None, header_siz
     img_w = grid_w + margin * 2
     # reduce bottom void by using two margins total instead of three
     img_h = grid_h + text_h + margin * 2
+
+    # Enforce BANNER_WIDTH if set — scale grid squares/padding to fit and center
+    if BANNER_WIDTH is not None:
+        target_w = BANNER_WIDTH
+        available_w = max(0, target_w - margin * 2)
+        if grid_w > available_w and available_w > 0:
+            scale = available_w / grid_w
+            scaled_square = max(1, int(round(square * scale)))
+            scaled_padding = max(0, int(round(padding * scale)))
+            # recompute grid width using scaled sizes
+            grid_w = cols * scaled_square + (cols - 1) * scaled_padding
+            # adjust margin to center the grid horizontally
+            margin = max(4, (target_w - grid_w) // 2)
+            img_w = grid_w + margin * 2
+            # use scaled values for drawing
+            square = scaled_square
+            padding = scaled_padding
+        else:
+            # center within target width
+            margin = max(4, (target_w - grid_w) // 2)
+            img_w = max(img_w, target_w)
 
     # clamp to MAX_BANNER_HEIGHT if set — shrink the grid area (particle area)
     if MAX_BANNER_HEIGHT is not None and img_h > MAX_BANNER_HEIGHT:
@@ -245,6 +267,25 @@ def generate_frames(grid, square=12, padding=4, header="", header_size=48, heade
             grid_h = min_grid_h
             img_h = grid_h + text_h + margin * 2
 
+    # Enforce BANNER_WIDTH by scaling square/padding to fit horizontally and centering
+    scaled_square = square
+    scaled_padding = padding
+    if BANNER_WIDTH is not None:
+        target_w = BANNER_WIDTH
+        # recompute grid_w using original sizes (may have been changed above)
+        grid_w = cols * square + (cols - 1) * padding
+        available_w = max(0, target_w - margin * 2)
+        if grid_w > available_w and available_w > 0:
+            scale = available_w / grid_w
+            scaled_square = max(1, int(round(square * scale)))
+            scaled_padding = max(0, int(round(padding * scale)))
+            grid_w = cols * scaled_square + (cols - 1) * scaled_padding
+            margin = max(4, (target_w - grid_w) // 2)
+            img_w = grid_w + margin * 2
+        else:
+            margin = max(4, (target_w - grid_w) // 2)
+            img_w = max(img_w, target_w)
+
     # particle background setup
     particle_count = min(300, max(60, img_w // 2))
     particles = make_particles(particle_count, img_w, img_h)
@@ -259,7 +300,7 @@ def generate_frames(grid, square=12, padding=4, header="", header_size=48, heade
         for p in particles:
             p.update(wind['x'], wind['y'])
 
-        img = draw_grid_image(grid, square=square, padding=padding, header=header, header_size=header_size, header_offset=header_offset, font=font, particles=particles, wind=wind, palette=palette)
+        img = draw_grid_image(grid, square=scaled_square, padding=scaled_padding, header=header, header_size=header_size, header_offset=header_offset, font=font, particles=particles, wind=wind, palette=palette)
         frames.append(img)
 
     # final hold frames
@@ -269,7 +310,7 @@ def generate_frames(grid, square=12, padding=4, header="", header_size=48, heade
         update_wind(wind)
         for p in particles:
             p.update(wind['x'], wind['y'])
-        frames.append(draw_grid_image(grid, square=square, padding=padding, header=header, header_size=header_size, header_offset=header_offset, font=font, particles=particles, wind=wind, palette=palette))
+        frames.append(draw_grid_image(grid, square=scaled_square, padding=scaled_padding, header=header, header_size=header_size, header_offset=header_offset, font=font, particles=particles, wind=wind, palette=palette))
 
     return frames
 
