@@ -35,16 +35,13 @@ jobs:
         run: |
           python scripts/generate_banner/generate_banner.py --username kasp470f --header "Hello there!" --header-size 48 --header-offset -32
 
-      - name: Commit banner if changed
+      - name: Commit banner
         env:
           PAT: ${{ secrets.PAT }}
         run: |
           set -e
-          if [ -n "$(git status --porcelain)" ]; then
-            git config --global user.name 'kasp470f'
-            git config --global user.email 'kasp470f@users.noreply.github.com'
-            git commit -am "Update banner - $(date +'%Y-%m-%d')"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+          git config --global user.name 'kasp470f'
+          git config --global user.email 'kasp470f@users.noreply.github.com'
+          git add -A
+          git commit -m "Update banner - $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push || echo "Nothing to push or push failed"
