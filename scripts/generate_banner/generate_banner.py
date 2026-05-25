@@ -29,7 +29,7 @@ SQUARE = 10
 PADDING = 4
 # Maximum banner values in pixels. Set to None to disable the clamp.
 MAX_BANNER_HEIGHT = 120
-BANNER_WIDTH = 840
+BANNER_WIDTH = 1012
 
 import random
 import math
