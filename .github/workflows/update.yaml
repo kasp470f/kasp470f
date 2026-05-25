@@ -33,7 +33,7 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
         run: |
-          python scripts/generate_banner/generate_banner.py --username kasp470f --header "Hello there!" --header-size 48 --header-offset -118
+          python scripts/generate_banner/generate_banner.py --username kasp470f --header "Hello there!" --header-size 52 --header-offset -118
 
       - name: Commit banner
         env:
