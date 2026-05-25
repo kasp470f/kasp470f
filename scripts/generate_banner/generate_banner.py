@@ -14,7 +14,7 @@ PALETTES = {
         'green': (82, 225, 163),
         'glow': (40, 120, 80),
         'text': (220, 255, 240),
-        'shadow': (0, 0, 0, 150),
+        'shadow': (180, 200, 200, 150),
     },
     'light': {
         'background': (245, 246, 250),
@@ -141,7 +141,7 @@ def draw_grid_image(grid, square=12, padding=4, header="", font=None, header_siz
     green = palette.get('green')
     glow_color = palette.get('glow')
     text_col = palette.get('text', (220, 255, 240))
-    shadow_col = palette.get('shadow', (0, 0, 0, 150))
+    shadow_col = palette.get('shadow', (180, 200, 200, 150))
 
     def _with_alpha(col, a=255):
         return col if len(col) == 4 else (col[0], col[1], col[2], a)
