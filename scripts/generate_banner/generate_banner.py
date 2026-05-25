@@ -292,9 +292,11 @@ def generate_frames(grid, square=12, padding=4, header="", header_size=48, heade
     wind = { 'angle': random.random() * math.pi * 2, 'strength': random.random() * 0.8 + 0.2 }
     update_wind(wind)
 
-    # number of frames for the reveal animation (use weeks count as baseline)
-    frames_count = max(30, cols)
-    for _ in range(frames_count):
+    # target total frames for every GIF (includes hold frames)
+    TARGET_FRAMES = 128
+    HOLD_FRAMES = 8
+    main_frames = max(1, TARGET_FRAMES - HOLD_FRAMES)
+    for _ in range(main_frames):
         # update wind and particles for this frame
         update_wind(wind)
         for p in particles:
@@ -303,9 +305,8 @@ def generate_frames(grid, square=12, padding=4, header="", header_size=48, heade
         img = draw_grid_image(grid, square=scaled_square, padding=scaled_padding, header=header, header_size=header_size, header_offset=header_offset, font=font, particles=particles, wind=wind, palette=palette)
         frames.append(img)
 
-    # final hold frames
-    last = frames[-1]
-    for _ in range(8):
+    # final hold frames to reach TARGET_FRAMES
+    for _ in range(HOLD_FRAMES):
         # advance particles slightly to keep subtle motion
         update_wind(wind)
         for p in particles:
