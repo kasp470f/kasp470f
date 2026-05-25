@@ -1,8 +1,8 @@
-<a href="#">
- 
-![Header](public/banner_dark.gif##gh-dark-mode-only)
-![Header](public/banner_light.gif##gh-light-mode-only)
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="public/banner_dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="public/banner_light.gif">
+  <img >
+</picture>
 
 # Kasper Wissendorf ‎ ‎ — ‎ ‎ Software Developer🕹️
 
