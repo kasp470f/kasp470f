@@ -1,13 +1,12 @@
 name: update
 
 on:
+	workflow_dispatch:
 	schedule:
 		- cron: '0 0 * * 0' # weekly on Sundays at 00:00 UTC
 
-workflow_dispatch:
-
 permissions:
-  contents: write 
+	contents: write
 
 jobs:
 	generate-banner:
@@ -40,10 +39,10 @@ jobs:
 				run: |
 					set -e
 					if [ -n "$(git status --porcelain)" ]; then
-            git config --global user.name 'kasp470f'
-            git config --global user.email 'kasp470f@users.noreply.github.com'
-            git commit -am "Update banner - $(date +'%Y-%m-%d')"
-            git push
+						git config --global user.name 'kasp470f'
+						git config --global user.email 'kasp470f@users.noreply.github.com'
+						git commit -am "Update banner - $(date +'%Y-%m-%d')"
+						git push
 					else
 						echo "No changes to commit"
 					fi
