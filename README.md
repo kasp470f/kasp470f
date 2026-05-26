@@ -6,7 +6,7 @@
 
 # Kasper Wissendorf ‎ ‎ — ‎ ‎ Software Developer🕹️
 
-Passionate developer from Denmark. I build small projects and experiments, and I share tools and demos here on my GitHub profile.
+Passionate **Full-Stack Developer** from Denmark. I build small projects and experiments, and I share tools and demos here on my GitHub profile.
 
 ---
 
@@ -17,7 +17,9 @@ Passionate developer from Denmark. I build small projects and experiments, and I
 
 ## About
 
-I enjoy learning new languages and building practical projects in my spare time. This repository hosts profile assets, utilities, and small demos I create.
+I enjoy learning new languages and building practical projects in my spare time. <br>My repositories can range from anything from a simple script to a full-fledged application, and I often use them as a way to explore new technologies and ideas. 
+
+I also have a **HomeLab**, this serves as a playground for testing and learning new technologies. I use it to experiment with different software and hardware configurations, and to gain hands-on experience with new tools and technologies.
 
 ## Socials
  
