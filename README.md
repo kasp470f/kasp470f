@@ -6,7 +6,7 @@
 
 # Kasper Wissendorf ‎ ‎ — ‎ ‎ Software Developer🕹️
 
-Passionate **Full-Stack Developer** from Denmark. I build small projects and experiments, and I share tools and demos here on my GitHub profile.
+Passionate **Full-Stack Developer** from Denmark. I have a strong desire to learn and grow as a developer, and I am always looking for new opportunities to expand my skills and knowledge.
 
 ---
 
