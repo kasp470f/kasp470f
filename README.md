@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="public/banner_dark.gif">
-  <source media="(prefers-color-scheme: light)" srcset="public/banner_light.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="public/banner_dark.gif" alt="Banner">
+  <source media="(prefers-color-scheme: light)" srcset="public/banner_light.gif" alt="Banner">
   <img >
 </picture>
 
