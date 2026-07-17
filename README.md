@@ -17,10 +17,11 @@ Passionate **Full-Stack Developer** from Denmark. I have a strong desire to lear
 
 ## About
 
-I love solving problems, learning new programming languages and building practical projects in my spare time.<br>
-My repositories can range from anything from a simple script to a full-fledged application, and I often use them as a way to explore new technologies and to play with ideas that I have or problems that I find in my daily life. 
+I like solving problems, learning new programming languages, and building projects just for the fun of it.
 
-I also have a **[HomeLab](https://www.howtogeek.com/what-is-a-homelab-and-how-do-you-start-one/)**, this serves as a playground for testing and learning new technologies. I use it to experiment with different software and hardware configurations, and to gain hands-on experience with new tools and technologies.
+My repositories include everything from quick scripts to full applications. They're mostly experiments, side projects, or solutions to problems I've run into, and they're a great excuse to learn something new.
+
+I also have a **[HomeLab](https://www.howtogeek.com/what-is-a-homelab-and-how-do-you-start-one/)** where I test new software, try out different hardware setups, and generally experiment with whatever has caught my interest. It's where I learn by doing (and occasionally by breaking things💥).
 
 ## Socials
  
